@@ -1,0 +1,6 @@
+@apiweb.churras.show_HostAddress = http://localhost:5209
+
+GET {{apiweb.churras.show_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
