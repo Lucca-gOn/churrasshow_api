@@ -4,6 +4,7 @@ using apiweb.churras.show.Interfaces;
 using apiweb.churras.show.Repositories;
 using apiweb.churras.show.Service;
 using apiweb.churras.show.Utils.Mail;
+using Microsoft.Azure.CognitiveServices.ContentModerator;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
 using Microsoft.OpenApi.Models;
@@ -21,6 +22,7 @@ builder.Services.AddScoped<IStatusEventoRepository, StatusEventoRepository>();
 builder.Services.AddScoped<ITiposUsuarioRepository, TiposUsuarioRepository>();
 builder.Services.AddScoped<IPacoteRepository, PacotesRepository>();
 builder.Services.AddScoped<IEventoRepository, EventoRepository>();
+builder.Services.AddScoped<IComentarioRepository, ComentarioRepository>();
 
 // Register services
 builder.Services.AddScoped<IEventoService, EventoService>();
@@ -105,6 +107,15 @@ builder.Services.AddSwaggerGen(options =>
         }
     });
 });
+
+//Configuração do serviço de moderação de conteúdo - Azure
+//Chave e Endpoint obtidos na azure.
+builder.Services.AddSingleton(provider => new ContentModeratorClient(
+    new ApiKeyServiceClientCredentials("e1ad89af0c8649c6a48cb4c1606c7d97"))
+{
+    Endpoint = "https://churrasshowcontentmoderator.cognitiveservices.azure.com/"
+}
+);
 
 var app = builder.Build();
 

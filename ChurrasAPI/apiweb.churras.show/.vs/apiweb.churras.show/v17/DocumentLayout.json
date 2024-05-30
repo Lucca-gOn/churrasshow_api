@@ -3,16 +3,68 @@
   "WorkspaceRootPath": "C:\\Users\\apbno\\Desktop\\churrasshow_api\\ChurrasAPI\\apiweb.churras.show\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{D2EC113E-AE10-44EC-986A-30185F942841}|apiweb.churras.show\\apiweb.churras.show.csproj|c:\\users\\apbno\\desktop\\churrasshow_api\\churrasapi\\apiweb.churras.show\\apiweb.churras.show\\service\\eventoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D2EC113E-AE10-44EC-986A-30185F942841}|apiweb.churras.show\\apiweb.churras.show.csproj|solutionrelative:apiweb.churras.show\\service\\eventoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{D2EC113E-AE10-44EC-986A-30185F942841}|apiweb.churras.show\\apiweb.churras.show.csproj|c:\\users\\apbno\\desktop\\churrasshow_api\\churrasapi\\apiweb.churras.show\\apiweb.churras.show\\controllers\\usuariocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D2EC113E-AE10-44EC-986A-30185F942841}|apiweb.churras.show\\apiweb.churras.show.csproj|solutionrelative:apiweb.churras.show\\controllers\\usuariocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D2EC113E-AE10-44EC-986A-30185F942841}|apiweb.churras.show\\apiweb.churras.show.csproj|c:\\users\\apbno\\desktop\\churrasshow_api\\churrasapi\\apiweb.churras.show\\apiweb.churras.show\\controllers\\comentariocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D2EC113E-AE10-44EC-986A-30185F942841}|apiweb.churras.show\\apiweb.churras.show.csproj|solutionrelative:apiweb.churras.show\\controllers\\comentariocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D2EC113E-AE10-44EC-986A-30185F942841}|apiweb.churras.show\\apiweb.churras.show.csproj|c:\\users\\apbno\\desktop\\churrasshow_api\\churrasapi\\apiweb.churras.show\\apiweb.churras.show\\domains\\comentarios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D2EC113E-AE10-44EC-986A-30185F942841}|apiweb.churras.show\\apiweb.churras.show.csproj|solutionrelative:apiweb.churras.show\\domains\\comentarios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D2EC113E-AE10-44EC-986A-30185F942841}|apiweb.churras.show\\apiweb.churras.show.csproj|c:\\users\\apbno\\desktop\\churrasshow_api\\churrasapi\\apiweb.churras.show\\apiweb.churras.show\\interfaces\\ienderecorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D2EC113E-AE10-44EC-986A-30185F942841}|apiweb.churras.show\\apiweb.churras.show.csproj|solutionrelative:apiweb.churras.show\\interfaces\\ienderecorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D2EC113E-AE10-44EC-986A-30185F942841}|apiweb.churras.show\\apiweb.churras.show.csproj|c:\\users\\apbno\\desktop\\churrasshow_api\\churrasapi\\apiweb.churras.show\\apiweb.churras.show\\interfaces\\icomentariorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D2EC113E-AE10-44EC-986A-30185F942841}|apiweb.churras.show\\apiweb.churras.show.csproj|solutionrelative:apiweb.churras.show\\interfaces\\icomentariorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D2EC113E-AE10-44EC-986A-30185F942841}|apiweb.churras.show\\apiweb.churras.show.csproj|c:\\users\\apbno\\desktop\\churrasshow_api\\churrasapi\\apiweb.churras.show\\apiweb.churras.show\\repositories\\comentariorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D2EC113E-AE10-44EC-986A-30185F942841}|apiweb.churras.show\\apiweb.churras.show.csproj|solutionrelative:apiweb.churras.show\\repositories\\comentariorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D2EC113E-AE10-44EC-986A-30185F942841}|apiweb.churras.show\\apiweb.churras.show.csproj|c:\\users\\apbno\\desktop\\churrasshow_api\\churrasapi\\apiweb.churras.show\\apiweb.churras.show\\controllers\\enderecocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D2EC113E-AE10-44EC-986A-30185F942841}|apiweb.churras.show\\apiweb.churras.show.csproj|solutionrelative:apiweb.churras.show\\controllers\\enderecocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{D2EC113E-AE10-44EC-986A-30185F942841}|apiweb.churras.show\\apiweb.churras.show.csproj|c:\\users\\apbno\\desktop\\churrasshow_api\\churrasapi\\apiweb.churras.show\\apiweb.churras.show\\controllers\\eventocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D2EC113E-AE10-44EC-986A-30185F942841}|apiweb.churras.show\\apiweb.churras.show.csproj|solutionrelative:apiweb.churras.show\\controllers\\eventocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{D2EC113E-AE10-44EC-986A-30185F942841}|apiweb.churras.show\\apiweb.churras.show.csproj|c:\\users\\apbno\\desktop\\churrasshow_api\\churrasapi\\apiweb.churras.show\\apiweb.churras.show\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D2EC113E-AE10-44EC-986A-30185F942841}|apiweb.churras.show\\apiweb.churras.show.csproj|solutionrelative:apiweb.churras.show\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D2EC113E-AE10-44EC-986A-30185F942841}|apiweb.churras.show\\apiweb.churras.show.csproj|c:\\users\\apbno\\desktop\\churrasshow_api\\churrasapi\\apiweb.churras.show\\apiweb.churras.show\\repositories\\enderecorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D2EC113E-AE10-44EC-986A-30185F942841}|apiweb.churras.show\\apiweb.churras.show.csproj|solutionrelative:apiweb.churras.show\\repositories\\enderecorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D2EC113E-AE10-44EC-986A-30185F942841}|apiweb.churras.show\\apiweb.churras.show.csproj|c:\\users\\apbno\\desktop\\churrasshow_api\\churrasapi\\apiweb.churras.show\\apiweb.churras.show\\interfaces\\iusuarioservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D2EC113E-AE10-44EC-986A-30185F942841}|apiweb.churras.show\\apiweb.churras.show.csproj|solutionrelative:apiweb.churras.show\\interfaces\\iusuarioservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D2EC113E-AE10-44EC-986A-30185F942841}|apiweb.churras.show\\apiweb.churras.show.csproj|c:\\users\\apbno\\desktop\\churrasshow_api\\churrasapi\\apiweb.churras.show\\apiweb.churras.show\\dto\\listarusuarioresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D2EC113E-AE10-44EC-986A-30185F942841}|apiweb.churras.show\\apiweb.churras.show.csproj|solutionrelative:apiweb.churras.show\\dto\\listarusuarioresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{D2EC113E-AE10-44EC-986A-30185F942841}|apiweb.churras.show\\apiweb.churras.show.csproj|c:\\users\\apbno\\desktop\\churrasshow_api\\churrasapi\\apiweb.churras.show\\apiweb.churras.show\\repositories\\usuariorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D2EC113E-AE10-44EC-986A-30185F942841}|apiweb.churras.show\\apiweb.churras.show.csproj|solutionrelative:apiweb.churras.show\\repositories\\usuariorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D2EC113E-AE10-44EC-986A-30185F942841}|apiweb.churras.show\\apiweb.churras.show.csproj|c:\\users\\apbno\\desktop\\churrasshow_api\\churrasapi\\apiweb.churras.show\\apiweb.churras.show\\dto\\listareventosresponseitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D2EC113E-AE10-44EC-986A-30185F942841}|apiweb.churras.show\\apiweb.churras.show.csproj|solutionrelative:apiweb.churras.show\\dto\\listareventosresponseitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D2EC113E-AE10-44EC-986A-30185F942841}|apiweb.churras.show\\apiweb.churras.show.csproj|c:\\users\\apbno\\desktop\\churrasshow_api\\churrasapi\\apiweb.churras.show\\apiweb.churras.show\\service\\eventoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D2EC113E-AE10-44EC-986A-30185F942841}|apiweb.churras.show\\apiweb.churras.show.csproj|solutionrelative:apiweb.churras.show\\service\\eventoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D2EC113E-AE10-44EC-986A-30185F942841}|apiweb.churras.show\\apiweb.churras.show.csproj|c:\\users\\apbno\\desktop\\churrasshow_api\\churrasapi\\apiweb.churras.show\\apiweb.churras.show\\service\\usuarioservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D2EC113E-AE10-44EC-986A-30185F942841}|apiweb.churras.show\\apiweb.churras.show.csproj|solutionrelative:apiweb.churras.show\\service\\usuarioservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{D2EC113E-AE10-44EC-986A-30185F942841}|apiweb.churras.show\\apiweb.churras.show.csproj|c:\\users\\apbno\\desktop\\churrasshow_api\\churrasapi\\apiweb.churras.show\\apiweb.churras.show\\repositories\\statuseventorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -23,32 +75,12 @@
       "RelativeMoniker": "D:0:0:{D2EC113E-AE10-44EC-986A-30185F942841}|apiweb.churras.show\\apiweb.churras.show.csproj|solutionrelative:apiweb.churras.show\\repositories\\tiposusuariorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D2EC113E-AE10-44EC-986A-30185F942841}|apiweb.churras.show\\apiweb.churras.show.csproj|c:\\users\\apbno\\desktop\\churrasshow_api\\churrasapi\\apiweb.churras.show\\apiweb.churras.show\\controllers\\usuariocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D2EC113E-AE10-44EC-986A-30185F942841}|apiweb.churras.show\\apiweb.churras.show.csproj|solutionrelative:apiweb.churras.show\\controllers\\usuariocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{D2EC113E-AE10-44EC-986A-30185F942841}|apiweb.churras.show\\apiweb.churras.show.csproj|c:\\users\\apbno\\desktop\\churrasshow_api\\churrasapi\\apiweb.churras.show\\apiweb.churras.show\\repositories\\eventorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D2EC113E-AE10-44EC-986A-30185F942841}|apiweb.churras.show\\apiweb.churras.show.csproj|solutionrelative:apiweb.churras.show\\repositories\\eventorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D2EC113E-AE10-44EC-986A-30185F942841}|apiweb.churras.show\\apiweb.churras.show.csproj|c:\\users\\apbno\\desktop\\churrasshow_api\\churrasapi\\apiweb.churras.show\\apiweb.churras.show\\repositories\\enderecorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D2EC113E-AE10-44EC-986A-30185F942841}|apiweb.churras.show\\apiweb.churras.show.csproj|solutionrelative:apiweb.churras.show\\repositories\\enderecorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{D2EC113E-AE10-44EC-986A-30185F942841}|apiweb.churras.show\\apiweb.churras.show.csproj|c:\\users\\apbno\\desktop\\churrasshow_api\\churrasapi\\apiweb.churras.show\\apiweb.churras.show\\repositories\\pacotesrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D2EC113E-AE10-44EC-986A-30185F942841}|apiweb.churras.show\\apiweb.churras.show.csproj|solutionrelative:apiweb.churras.show\\repositories\\pacotesrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D2EC113E-AE10-44EC-986A-30185F942841}|apiweb.churras.show\\apiweb.churras.show.csproj|c:\\users\\apbno\\desktop\\churrasshow_api\\churrasapi\\apiweb.churras.show\\apiweb.churras.show\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D2EC113E-AE10-44EC-986A-30185F942841}|apiweb.churras.show\\apiweb.churras.show.csproj|solutionrelative:apiweb.churras.show\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D2EC113E-AE10-44EC-986A-30185F942841}|apiweb.churras.show\\apiweb.churras.show.csproj|c:\\users\\apbno\\desktop\\churrasshow_api\\churrasapi\\apiweb.churras.show\\apiweb.churras.show\\service\\usuarioservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D2EC113E-AE10-44EC-986A-30185F942841}|apiweb.churras.show\\apiweb.churras.show.csproj|solutionrelative:apiweb.churras.show\\service\\usuarioservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D2EC113E-AE10-44EC-986A-30185F942841}|apiweb.churras.show\\apiweb.churras.show.csproj|c:\\users\\apbno\\desktop\\churrasshow_api\\churrasapi\\apiweb.churras.show\\apiweb.churras.show\\dto\\listareventosresponseitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D2EC113E-AE10-44EC-986A-30185F942841}|apiweb.churras.show\\apiweb.churras.show.csproj|solutionrelative:apiweb.churras.show\\dto\\listareventosresponseitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{D2EC113E-AE10-44EC-986A-30185F942841}|apiweb.churras.show\\apiweb.churras.show.csproj|c:\\users\\apbno\\desktop\\churrasshow_api\\churrasapi\\apiweb.churras.show\\apiweb.churras.show\\utils\\mail\\emailservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -83,10 +115,6 @@
       "RelativeMoniker": "D:0:0:{D2EC113E-AE10-44EC-986A-30185F942841}|apiweb.churras.show\\apiweb.churras.show.csproj|solutionrelative:apiweb.churras.show\\controllers\\logincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D2EC113E-AE10-44EC-986A-30185F942841}|apiweb.churras.show\\apiweb.churras.show.csproj|c:\\users\\apbno\\desktop\\churrasshow_api\\churrasapi\\apiweb.churras.show\\apiweb.churras.show\\dto\\listarusuarioresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D2EC113E-AE10-44EC-986A-30185F942841}|apiweb.churras.show\\apiweb.churras.show.csproj|solutionrelative:apiweb.churras.show\\dto\\listarusuarioresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{D2EC113E-AE10-44EC-986A-30185F942841}|apiweb.churras.show\\apiweb.churras.show.csproj|c:\\users\\apbno\\desktop\\churrasshow_api\\churrasapi\\apiweb.churras.show\\apiweb.churras.show\\dto\\listareventoresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D2EC113E-AE10-44EC-986A-30185F942841}|apiweb.churras.show\\apiweb.churras.show.csproj|solutionrelative:apiweb.churras.show\\dto\\listareventoresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -113,10 +141,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{D2EC113E-AE10-44EC-986A-30185F942841}|apiweb.churras.show\\apiweb.churras.show.csproj|c:\\users\\apbno\\desktop\\churrasshow_api\\churrasapi\\apiweb.churras.show\\apiweb.churras.show\\viewmodels\\usuarioviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D2EC113E-AE10-44EC-986A-30185F942841}|apiweb.churras.show\\apiweb.churras.show.csproj|solutionrelative:apiweb.churras.show\\viewmodels\\usuarioviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D2EC113E-AE10-44EC-986A-30185F942841}|apiweb.churras.show\\apiweb.churras.show.csproj|c:\\users\\apbno\\desktop\\churrasshow_api\\churrasapi\\apiweb.churras.show\\apiweb.churras.show\\controllers\\enderecocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D2EC113E-AE10-44EC-986A-30185F942841}|apiweb.churras.show\\apiweb.churras.show.csproj|solutionrelative:apiweb.churras.show\\controllers\\enderecocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{D2EC113E-AE10-44EC-986A-30185F942841}|apiweb.churras.show\\apiweb.churras.show.csproj|c:\\users\\apbno\\desktop\\churrasshow_api\\churrasapi\\apiweb.churras.show\\apiweb.churras.show\\interfaces\\ipacoterepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -165,10 +189,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{D2EC113E-AE10-44EC-986A-30185F942841}|apiweb.churras.show\\apiweb.churras.show.csproj|c:\\users\\apbno\\desktop\\churrasshow_api\\churrasapi\\apiweb.churras.show\\apiweb.churras.show\\interfaces\\iusuariorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D2EC113E-AE10-44EC-986A-30185F942841}|apiweb.churras.show\\apiweb.churras.show.csproj|solutionrelative:apiweb.churras.show\\interfaces\\iusuariorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D2EC113E-AE10-44EC-986A-30185F942841}|apiweb.churras.show\\apiweb.churras.show.csproj|c:\\users\\apbno\\desktop\\churrasshow_api\\churrasapi\\apiweb.churras.show\\apiweb.churras.show\\interfaces\\iusuarioservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D2EC113E-AE10-44EC-986A-30185F942841}|apiweb.churras.show\\apiweb.churras.show.csproj|solutionrelative:apiweb.churras.show\\interfaces\\iusuarioservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{D2EC113E-AE10-44EC-986A-30185F942841}|apiweb.churras.show\\apiweb.churras.show.csproj|c:\\users\\apbno\\desktop\\churrasshow_api\\churrasapi\\apiweb.churras.show\\apiweb.churras.show\\controllers\\recuperarsenhacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -223,10 +243,6 @@
       "RelativeMoniker": "D:0:0:{D2EC113E-AE10-44EC-986A-30185F942841}|apiweb.churras.show\\apiweb.churras.show.csproj|solutionrelative:apiweb.churras.show\\interfaces\\iunitofwork.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D2EC113E-AE10-44EC-986A-30185F942841}|apiweb.churras.show\\apiweb.churras.show.csproj|c:\\users\\apbno\\desktop\\churrasshow_api\\churrasapi\\apiweb.churras.show\\apiweb.churras.show\\interfaces\\ienderecorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D2EC113E-AE10-44EC-986A-30185F942841}|apiweb.churras.show\\apiweb.churras.show.csproj|solutionrelative:apiweb.churras.show\\interfaces\\ienderecorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{D2EC113E-AE10-44EC-986A-30185F942841}|apiweb.churras.show\\apiweb.churras.show.csproj|c:\\users\\apbno\\desktop\\churrasshow_api\\churrasapi\\apiweb.churras.show\\apiweb.churras.show\\interfaces\\itiposusuariorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D2EC113E-AE10-44EC-986A-30185F942841}|apiweb.churras.show\\apiweb.churras.show.csproj|solutionrelative:apiweb.churras.show\\interfaces\\itiposusuariorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -237,10 +253,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{D2EC113E-AE10-44EC-986A-30185F942841}|apiweb.churras.show\\apiweb.churras.show.csproj|c:\\users\\apbno\\desktop\\churrasshow_api\\churrasapi\\apiweb.churras.show\\apiweb.churras.show\\controllers\\statuseventocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D2EC113E-AE10-44EC-986A-30185F942841}|apiweb.churras.show\\apiweb.churras.show.csproj|solutionrelative:apiweb.churras.show\\controllers\\statuseventocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D2EC113E-AE10-44EC-986A-30185F942841}|apiweb.churras.show\\apiweb.churras.show.csproj|c:\\users\\apbno\\desktop\\churrasshow_api\\churrasapi\\apiweb.churras.show\\apiweb.churras.show\\domains\\comentarios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D2EC113E-AE10-44EC-986A-30185F942841}|apiweb.churras.show\\apiweb.churras.show.csproj|solutionrelative:apiweb.churras.show\\domains\\comentarios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{D2EC113E-AE10-44EC-986A-30185F942841}|apiweb.churras.show\\apiweb.churras.show.csproj|c:\\users\\apbno\\desktop\\churrasshow_api\\churrasapi\\apiweb.churras.show\\apiweb.churras.show\\domains\\tiposusuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -266,117 +278,26 @@
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "launchSettings.json",
-              "DocumentMoniker": "C:\\Users\\apbno\\Desktop\\churrasshow_api\\ChurrasAPI\\apiweb.churras.show\\apiweb.churras.show\\Properties\\launchSettings.json",
-              "RelativeDocumentMoniker": "apiweb.churras.show\\Properties\\launchSettings.json",
-              "ToolTip": "C:\\Users\\apbno\\Desktop\\churrasshow_api\\ChurrasAPI\\apiweb.churras.show\\apiweb.churras.show\\Properties\\launchSettings.json",
-              "RelativeToolTip": "apiweb.churras.show\\Properties\\launchSettings.json",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABUAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-05-23T13:06:14.744Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\apbno\\Desktop\\churrasshow_api\\ChurrasAPI\\apiweb.churras.show\\apiweb.churras.show\\Program.cs",
-              "RelativeDocumentMoniker": "apiweb.churras.show\\Program.cs",
-              "ToolTip": "C:\\Users\\apbno\\Desktop\\churrasshow_api\\ChurrasAPI\\apiweb.churras.show\\apiweb.churras.show\\Program.cs",
-              "RelativeToolTip": "apiweb.churras.show\\Program.cs",
-              "ViewState": "AQIAAFgAAAAAAAAAAAAAAGwAAAAAAAAA",
+              "DocumentIndex": 2,
+              "Title": "Comentarios.cs",
+              "DocumentMoniker": "C:\\Users\\apbno\\Desktop\\churrasshow_api\\ChurrasAPI\\apiweb.churras.show\\apiweb.churras.show\\Domains\\Comentarios.cs",
+              "RelativeDocumentMoniker": "apiweb.churras.show\\Domains\\Comentarios.cs",
+              "ToolTip": "C:\\Users\\apbno\\Desktop\\churrasshow_api\\ChurrasAPI\\apiweb.churras.show\\apiweb.churras.show\\Domains\\Comentarios.cs",
+              "RelativeToolTip": "apiweb.churras.show\\Domains\\Comentarios.cs",
+              "ViewState": "AQIAAAUAAAAAAAAAAAAuwCUAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-23T23:33:30.476Z",
+              "WhenOpened": "2024-05-26T22:15:07.578Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 7,
-              "Title": "EnderecoRepository.cs",
-              "DocumentMoniker": "C:\\Users\\apbno\\Desktop\\churrasshow_api\\ChurrasAPI\\apiweb.churras.show\\apiweb.churras.show\\Repositories\\EnderecoRepository.cs",
-              "RelativeDocumentMoniker": "apiweb.churras.show\\Repositories\\EnderecoRepository.cs",
-              "ToolTip": "C:\\Users\\apbno\\Desktop\\churrasshow_api\\ChurrasAPI\\apiweb.churras.show\\apiweb.churras.show\\Repositories\\EnderecoRepository.cs",
-              "RelativeToolTip": "apiweb.churras.show\\Repositories\\EnderecoRepository.cs",
-              "ViewState": "AQIAAA0AAAAAAAAAAAAgwCwAAAAMAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-27T21:59:10.351Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "EventoRepository.cs",
-              "DocumentMoniker": "C:\\Users\\apbno\\Desktop\\churrasshow_api\\ChurrasAPI\\apiweb.churras.show\\apiweb.churras.show\\Repositories\\EventoRepository.cs",
-              "RelativeDocumentMoniker": "apiweb.churras.show\\Repositories\\EventoRepository.cs",
-              "ToolTip": "C:\\Users\\apbno\\Desktop\\churrasshow_api\\ChurrasAPI\\apiweb.churras.show\\apiweb.churras.show\\Repositories\\EventoRepository.cs",
-              "RelativeToolTip": "apiweb.churras.show\\Repositories\\EventoRepository.cs",
-              "ViewState": "AQIAAA0AAAAAAAAAAAAgwCEAAAANAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-28T19:56:49.674Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "PacotesRepository.cs",
-              "DocumentMoniker": "C:\\Users\\apbno\\Desktop\\churrasshow_api\\ChurrasAPI\\apiweb.churras.show\\apiweb.churras.show\\Repositories\\PacotesRepository.cs",
-              "RelativeDocumentMoniker": "apiweb.churras.show\\Repositories\\PacotesRepository.cs",
-              "ToolTip": "C:\\Users\\apbno\\Desktop\\churrasshow_api\\ChurrasAPI\\apiweb.churras.show\\apiweb.churras.show\\Repositories\\PacotesRepository.cs",
-              "RelativeToolTip": "apiweb.churras.show\\Repositories\\PacotesRepository.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAACEAAAAMAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-27T23:13:02.64Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "StatusEventoRepository.cs",
-              "DocumentMoniker": "C:\\Users\\apbno\\Desktop\\churrasshow_api\\ChurrasAPI\\apiweb.churras.show\\apiweb.churras.show\\Repositories\\StatusEventoRepository.cs",
-              "RelativeDocumentMoniker": "apiweb.churras.show\\Repositories\\StatusEventoRepository.cs",
-              "ToolTip": "C:\\Users\\apbno\\Desktop\\churrasshow_api\\ChurrasAPI\\apiweb.churras.show\\apiweb.churras.show\\Repositories\\StatusEventoRepository.cs",
-              "RelativeToolTip": "apiweb.churras.show\\Repositories\\StatusEventoRepository.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAIAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-27T22:35:51.254Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "TiposUsuarioRepository.cs",
-              "DocumentMoniker": "C:\\Users\\apbno\\Desktop\\churrasshow_api\\ChurrasAPI\\apiweb.churras.show\\apiweb.churras.show\\Repositories\\TiposUsuarioRepository.cs",
-              "RelativeDocumentMoniker": "apiweb.churras.show\\Repositories\\TiposUsuarioRepository.cs",
-              "ToolTip": "C:\\Users\\apbno\\Desktop\\churrasshow_api\\ChurrasAPI\\apiweb.churras.show\\apiweb.churras.show\\Repositories\\TiposUsuarioRepository.cs",
-              "RelativeToolTip": "apiweb.churras.show\\Repositories\\TiposUsuarioRepository.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAfAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-27T22:44:32.461Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "EventoService.cs",
-              "DocumentMoniker": "C:\\Users\\apbno\\Desktop\\churrasshow_api\\ChurrasAPI\\apiweb.churras.show\\apiweb.churras.show\\Service\\EventoService.cs",
-              "RelativeDocumentMoniker": "apiweb.churras.show\\Service\\EventoService.cs",
-              "ToolTip": "C:\\Users\\apbno\\Desktop\\churrasshow_api\\ChurrasAPI\\apiweb.churras.show\\apiweb.churras.show\\Service\\EventoService.cs",
-              "RelativeToolTip": "apiweb.churras.show\\Service\\EventoService.cs",
-              "ViewState": "AQIAACsAAAAAAAAAAAAQwFwAAABqAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-28T18:23:53.811Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
               "Title": "EventoController.cs",
               "DocumentMoniker": "C:\\Users\\apbno\\Desktop\\churrasshow_api\\ChurrasAPI\\apiweb.churras.show\\apiweb.churras.show\\Controllers\\EventoController.cs",
               "RelativeDocumentMoniker": "apiweb.churras.show\\Controllers\\EventoController.cs",
               "ToolTip": "C:\\Users\\apbno\\Desktop\\churrasshow_api\\ChurrasAPI\\apiweb.churras.show\\apiweb.churras.show\\Controllers\\EventoController.cs",
               "RelativeToolTip": "apiweb.churras.show\\Controllers\\EventoController.cs",
-              "ViewState": "AQIAAEsAAAAAAAAAAAA6wHEAAAAAAAAA",
+              "ViewState": "AQIAAEwAAAAAAAAAAAAiwHEAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-28T19:51:27.784Z",
               "EditorCaption": ""
@@ -384,45 +305,162 @@
             {
               "$type": "Document",
               "DocumentIndex": 5,
+              "Title": "ComentarioRepository.cs",
+              "DocumentMoniker": "C:\\Users\\apbno\\Desktop\\churrasshow_api\\ChurrasAPI\\apiweb.churras.show\\apiweb.churras.show\\Repositories\\ComentarioRepository.cs",
+              "RelativeDocumentMoniker": "apiweb.churras.show\\Repositories\\ComentarioRepository.cs",
+              "ToolTip": "C:\\Users\\apbno\\Desktop\\churrasshow_api\\ChurrasAPI\\apiweb.churras.show\\apiweb.churras.show\\Repositories\\ComentarioRepository.cs",
+              "RelativeToolTip": "apiweb.churras.show\\Repositories\\ComentarioRepository.cs",
+              "ViewState": "AQIAACEAAAAAAAAAAAAowGkAAAAwAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-30T19:13:33.75Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "ListarUsuarioResponse.cs",
+              "DocumentMoniker": "C:\\Users\\apbno\\Desktop\\churrasshow_api\\ChurrasAPI\\apiweb.churras.show\\apiweb.churras.show\\Dto\\ListarUsuarioResponse.cs",
+              "RelativeDocumentMoniker": "apiweb.churras.show\\Dto\\ListarUsuarioResponse.cs",
+              "ToolTip": "C:\\Users\\apbno\\Desktop\\churrasshow_api\\ChurrasAPI\\apiweb.churras.show\\apiweb.churras.show\\Dto\\ListarUsuarioResponse.cs",
+              "RelativeToolTip": "apiweb.churras.show\\Dto\\ListarUsuarioResponse.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-27T01:15:09.182Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "EnderecoController.cs",
+              "DocumentMoniker": "C:\\Users\\apbno\\Desktop\\churrasshow_api\\ChurrasAPI\\apiweb.churras.show\\apiweb.churras.show\\Controllers\\EnderecoController.cs",
+              "RelativeDocumentMoniker": "apiweb.churras.show\\Controllers\\EnderecoController.cs",
+              "ToolTip": "C:\\Users\\apbno\\Desktop\\churrasshow_api\\ChurrasAPI\\apiweb.churras.show\\apiweb.churras.show\\Controllers\\EnderecoController.cs",
+              "RelativeToolTip": "apiweb.churras.show\\Controllers\\EnderecoController.cs",
+              "ViewState": "AQIAABsAAAAAAAAAAAAowAoAAAAEAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-27T22:07:33.103Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "IComentarioRepository.cs",
+              "DocumentMoniker": "C:\\Users\\apbno\\Desktop\\churrasshow_api\\ChurrasAPI\\apiweb.churras.show\\apiweb.churras.show\\Interfaces\\IComentarioRepository.cs",
+              "RelativeDocumentMoniker": "apiweb.churras.show\\Interfaces\\IComentarioRepository.cs",
+              "ToolTip": "C:\\Users\\apbno\\Desktop\\churrasshow_api\\ChurrasAPI\\apiweb.churras.show\\apiweb.churras.show\\Interfaces\\IComentarioRepository.cs",
+              "RelativeToolTip": "apiweb.churras.show\\Interfaces\\IComentarioRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-30T19:13:20.451Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "IEnderecoRepository.cs",
+              "DocumentMoniker": "C:\\Users\\apbno\\Desktop\\churrasshow_api\\ChurrasAPI\\apiweb.churras.show\\apiweb.churras.show\\Interfaces\\IEnderecoRepository.cs",
+              "RelativeDocumentMoniker": "apiweb.churras.show\\Interfaces\\IEnderecoRepository.cs",
+              "ToolTip": "C:\\Users\\apbno\\Desktop\\churrasshow_api\\ChurrasAPI\\apiweb.churras.show\\apiweb.churras.show\\Interfaces\\IEnderecoRepository.cs",
+              "RelativeToolTip": "apiweb.churras.show\\Interfaces\\IEnderecoRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-27T21:53:27.974Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
               "Title": "UsuarioController.cs",
               "DocumentMoniker": "C:\\Users\\apbno\\Desktop\\churrasshow_api\\ChurrasAPI\\apiweb.churras.show\\apiweb.churras.show\\Controllers\\UsuarioController.cs",
               "RelativeDocumentMoniker": "apiweb.churras.show\\Controllers\\UsuarioController.cs",
               "ToolTip": "C:\\Users\\apbno\\Desktop\\churrasshow_api\\ChurrasAPI\\apiweb.churras.show\\apiweb.churras.show\\Controllers\\UsuarioController.cs",
               "RelativeToolTip": "apiweb.churras.show\\Controllers\\UsuarioController.cs",
-              "ViewState": "AQIAAEgAAAAAAAAAAAAowGYAAAAFAAAA",
+              "ViewState": "AQIAABQAAAAAAAAAAAAQwCoAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-26T23:56:18.945Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
+              "Title": "ComentarioController.cs",
+              "DocumentMoniker": "C:\\Users\\apbno\\Desktop\\churrasshow_api\\ChurrasAPI\\apiweb.churras.show\\apiweb.churras.show\\Controllers\\ComentarioController.cs",
+              "RelativeDocumentMoniker": "apiweb.churras.show\\Controllers\\ComentarioController.cs",
+              "ToolTip": "C:\\Users\\apbno\\Desktop\\churrasshow_api\\ChurrasAPI\\apiweb.churras.show\\apiweb.churras.show\\Controllers\\ComentarioController.cs",
+              "RelativeToolTip": "apiweb.churras.show\\Controllers\\ComentarioController.cs",
+              "ViewState": "AQIAAEoAAAAAAAAAAAA5wCwAAAAwAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-30T19:14:00.518Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\apbno\\Desktop\\churrasshow_api\\ChurrasAPI\\apiweb.churras.show\\apiweb.churras.show\\Program.cs",
+              "RelativeDocumentMoniker": "apiweb.churras.show\\Program.cs",
+              "ToolTip": "C:\\Users\\apbno\\Desktop\\churrasshow_api\\ChurrasAPI\\apiweb.churras.show\\apiweb.churras.show\\Program.cs",
+              "RelativeToolTip": "apiweb.churras.show\\Program.cs",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAAAB8AAAA1AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-23T23:33:30.476Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "ListarEventosResponseItem.cs",
+              "DocumentMoniker": "C:\\Users\\apbno\\Desktop\\churrasshow_api\\ChurrasAPI\\apiweb.churras.show\\apiweb.churras.show\\Dto\\ListarEventosResponseItem.cs",
+              "RelativeDocumentMoniker": "apiweb.churras.show\\Dto\\ListarEventosResponseItem.cs",
+              "ToolTip": "C:\\Users\\apbno\\Desktop\\churrasshow_api\\ChurrasAPI\\apiweb.churras.show\\apiweb.churras.show\\Dto\\ListarEventosResponseItem.cs",
+              "RelativeToolTip": "apiweb.churras.show\\Dto\\ListarEventosResponseItem.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABkAAABDAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-29T12:04:43.175Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "EnderecoRepository.cs",
+              "DocumentMoniker": "C:\\Users\\apbno\\Desktop\\churrasshow_api\\ChurrasAPI\\apiweb.churras.show\\apiweb.churras.show\\Repositories\\EnderecoRepository.cs",
+              "RelativeDocumentMoniker": "apiweb.churras.show\\Repositories\\EnderecoRepository.cs",
+              "ToolTip": "C:\\Users\\apbno\\Desktop\\churrasshow_api\\ChurrasAPI\\apiweb.churras.show\\apiweb.churras.show\\Repositories\\EnderecoRepository.cs",
+              "RelativeToolTip": "apiweb.churras.show\\Repositories\\EnderecoRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACwAAAAMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-27T21:59:10.351Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "IUsuarioService.cs",
+              "DocumentMoniker": "C:\\Users\\apbno\\Desktop\\churrasshow_api\\ChurrasAPI\\apiweb.churras.show\\apiweb.churras.show\\Interfaces\\IUsuarioService.cs",
+              "RelativeDocumentMoniker": "apiweb.churras.show\\Interfaces\\IUsuarioService.cs",
+              "ToolTip": "C:\\Users\\apbno\\Desktop\\churrasshow_api\\ChurrasAPI\\apiweb.churras.show\\apiweb.churras.show\\Interfaces\\IUsuarioService.cs",
+              "RelativeToolTip": "apiweb.churras.show\\Interfaces\\IUsuarioService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-27T01:29:05.923Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
               "Title": "UsuarioRepository.cs",
               "DocumentMoniker": "C:\\Users\\apbno\\Desktop\\churrasshow_api\\ChurrasAPI\\apiweb.churras.show\\apiweb.churras.show\\Repositories\\UsuarioRepository.cs",
               "RelativeDocumentMoniker": "apiweb.churras.show\\Repositories\\UsuarioRepository.cs",
               "ToolTip": "C:\\Users\\apbno\\Desktop\\churrasshow_api\\ChurrasAPI\\apiweb.churras.show\\apiweb.churras.show\\Repositories\\UsuarioRepository.cs",
               "RelativeToolTip": "apiweb.churras.show\\Repositories\\UsuarioRepository.cs",
-              "ViewState": "AQIAAAkAAAAAAAAAAAAAAB4AAAAAAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAB4AAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-26T23:27:40.76Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "ChurrasShowContext.cs",
-              "DocumentMoniker": "C:\\Users\\apbno\\Desktop\\churrasshow_api\\ChurrasAPI\\apiweb.churras.show\\apiweb.churras.show\\Context\\ChurrasShowContext.cs",
-              "RelativeDocumentMoniker": "apiweb.churras.show\\Context\\ChurrasShowContext.cs",
-              "ToolTip": "C:\\Users\\apbno\\Desktop\\churrasshow_api\\ChurrasAPI\\apiweb.churras.show\\apiweb.churras.show\\Context\\ChurrasShowContext.cs",
-              "RelativeToolTip": "apiweb.churras.show\\Context\\ChurrasShowContext.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABUAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-23T23:26:16.214Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 15,
               "Title": "UsuarioService.cs",
               "DocumentMoniker": "C:\\Users\\apbno\\Desktop\\churrasshow_api\\ChurrasAPI\\apiweb.churras.show\\apiweb.churras.show\\Service\\UsuarioService.cs",
               "RelativeDocumentMoniker": "apiweb.churras.show\\Service\\UsuarioService.cs",
@@ -435,20 +473,98 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "ListarEventosResponseItem.cs",
-              "DocumentMoniker": "C:\\Users\\apbno\\Desktop\\churrasshow_api\\ChurrasAPI\\apiweb.churras.show\\apiweb.churras.show\\Dto\\ListarEventosResponseItem.cs",
-              "RelativeDocumentMoniker": "apiweb.churras.show\\Dto\\ListarEventosResponseItem.cs",
-              "ToolTip": "C:\\Users\\apbno\\Desktop\\churrasshow_api\\ChurrasAPI\\apiweb.churras.show\\apiweb.churras.show\\Dto\\ListarEventosResponseItem.cs",
-              "RelativeToolTip": "apiweb.churras.show\\Dto\\ListarEventosResponseItem.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAEAAAA",
+              "DocumentIndex": 19,
+              "Title": "PacotesRepository.cs",
+              "DocumentMoniker": "C:\\Users\\apbno\\Desktop\\churrasshow_api\\ChurrasAPI\\apiweb.churras.show\\apiweb.churras.show\\Repositories\\PacotesRepository.cs",
+              "RelativeDocumentMoniker": "apiweb.churras.show\\Repositories\\PacotesRepository.cs",
+              "ToolTip": "C:\\Users\\apbno\\Desktop\\churrasshow_api\\ChurrasAPI\\apiweb.churras.show\\apiweb.churras.show\\Repositories\\PacotesRepository.cs",
+              "RelativeToolTip": "apiweb.churras.show\\Repositories\\PacotesRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACEAAAAMAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-29T12:04:43.175Z",
+              "WhenOpened": "2024-05-27T23:13:02.64Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 18,
+              "Title": "EventoRepository.cs",
+              "DocumentMoniker": "C:\\Users\\apbno\\Desktop\\churrasshow_api\\ChurrasAPI\\apiweb.churras.show\\apiweb.churras.show\\Repositories\\EventoRepository.cs",
+              "RelativeDocumentMoniker": "apiweb.churras.show\\Repositories\\EventoRepository.cs",
+              "ToolTip": "C:\\Users\\apbno\\Desktop\\churrasshow_api\\ChurrasAPI\\apiweb.churras.show\\apiweb.churras.show\\Repositories\\EventoRepository.cs",
+              "RelativeToolTip": "apiweb.churras.show\\Repositories\\EventoRepository.cs",
+              "ViewState": "AQIAAA0AAAAAAAAAAAAgwCEAAAANAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-28T19:56:49.674Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "EventoService.cs",
+              "DocumentMoniker": "C:\\Users\\apbno\\Desktop\\churrasshow_api\\ChurrasAPI\\apiweb.churras.show\\apiweb.churras.show\\Service\\EventoService.cs",
+              "RelativeDocumentMoniker": "apiweb.churras.show\\Service\\EventoService.cs",
+              "ToolTip": "C:\\Users\\apbno\\Desktop\\churrasshow_api\\ChurrasAPI\\apiweb.churras.show\\apiweb.churras.show\\Service\\EventoService.cs",
+              "RelativeToolTip": "apiweb.churras.show\\Service\\EventoService.cs",
+              "ViewState": "AQIAAGIAAAAAAAAAAAAAAGQAAABEAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-28T18:23:53.811Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "TiposUsuarioRepository.cs",
+              "DocumentMoniker": "C:\\Users\\apbno\\Desktop\\churrasshow_api\\ChurrasAPI\\apiweb.churras.show\\apiweb.churras.show\\Repositories\\TiposUsuarioRepository.cs",
+              "RelativeDocumentMoniker": "apiweb.churras.show\\Repositories\\TiposUsuarioRepository.cs",
+              "ToolTip": "C:\\Users\\apbno\\Desktop\\churrasshow_api\\ChurrasAPI\\apiweb.churras.show\\apiweb.churras.show\\Repositories\\TiposUsuarioRepository.cs",
+              "RelativeToolTip": "apiweb.churras.show\\Repositories\\TiposUsuarioRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAfAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-27T22:44:32.461Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "StatusEventoRepository.cs",
+              "DocumentMoniker": "C:\\Users\\apbno\\Desktop\\churrasshow_api\\ChurrasAPI\\apiweb.churras.show\\apiweb.churras.show\\Repositories\\StatusEventoRepository.cs",
+              "RelativeDocumentMoniker": "apiweb.churras.show\\Repositories\\StatusEventoRepository.cs",
+              "ToolTip": "C:\\Users\\apbno\\Desktop\\churrasshow_api\\ChurrasAPI\\apiweb.churras.show\\apiweb.churras.show\\Repositories\\StatusEventoRepository.cs",
+              "RelativeToolTip": "apiweb.churras.show\\Repositories\\StatusEventoRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-27T22:35:51.254Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "launchSettings.json",
+              "DocumentMoniker": "C:\\Users\\apbno\\Desktop\\churrasshow_api\\ChurrasAPI\\apiweb.churras.show\\apiweb.churras.show\\Properties\\launchSettings.json",
+              "RelativeDocumentMoniker": "apiweb.churras.show\\Properties\\launchSettings.json",
+              "ToolTip": "C:\\Users\\apbno\\Desktop\\churrasshow_api\\ChurrasAPI\\apiweb.churras.show\\apiweb.churras.show\\Properties\\launchSettings.json",
+              "RelativeToolTip": "apiweb.churras.show\\Properties\\launchSettings.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABUAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-05-23T13:06:14.744Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "ChurrasShowContext.cs",
+              "DocumentMoniker": "C:\\Users\\apbno\\Desktop\\churrasshow_api\\ChurrasAPI\\apiweb.churras.show\\apiweb.churras.show\\Context\\ChurrasShowContext.cs",
+              "RelativeDocumentMoniker": "apiweb.churras.show\\Context\\ChurrasShowContext.cs",
+              "ToolTip": "C:\\Users\\apbno\\Desktop\\churrasshow_api\\ChurrasAPI\\apiweb.churras.show\\apiweb.churras.show\\Context\\ChurrasShowContext.cs",
+              "RelativeToolTip": "apiweb.churras.show\\Context\\ChurrasShowContext.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABUAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-23T23:26:16.214Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
               "Title": "EmailService.cs",
               "DocumentMoniker": "C:\\Users\\apbno\\Desktop\\churrasshow_api\\ChurrasAPI\\apiweb.churras.show\\apiweb.churras.show\\Utils\\Mail\\EmailService.cs",
               "RelativeDocumentMoniker": "apiweb.churras.show\\Utils\\Mail\\EmailService.cs",
@@ -461,7 +577,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 21,
               "Title": "TiposUsuariosController.cs",
               "DocumentMoniker": "C:\\Users\\apbno\\Desktop\\churrasshow_api\\ChurrasAPI\\apiweb.churras.show\\apiweb.churras.show\\Controllers\\TiposUsuariosController.cs",
               "RelativeDocumentMoniker": "apiweb.churras.show\\Controllers\\TiposUsuariosController.cs",
@@ -474,7 +590,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 22,
               "Title": "appsettings.json",
               "DocumentMoniker": "C:\\Users\\apbno\\Desktop\\churrasshow_api\\ChurrasAPI\\apiweb.churras.show\\apiweb.churras.show\\appsettings.json",
               "RelativeDocumentMoniker": "apiweb.churras.show\\appsettings.json",
@@ -487,7 +603,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 23,
               "Title": "apiweb.churras.show.http",
               "DocumentMoniker": "C:\\Users\\apbno\\Desktop\\churrasshow_api\\ChurrasAPI\\apiweb.churras.show\\apiweb.churras.show\\apiweb.churras.show.http",
               "RelativeDocumentMoniker": "apiweb.churras.show\\apiweb.churras.show.http",
@@ -500,7 +616,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 26,
               "Title": "20240529105019_BDv4.cs",
               "DocumentMoniker": "C:\\Users\\apbno\\Desktop\\churrasshow_api\\ChurrasAPI\\apiweb.churras.show\\apiweb.churras.show\\Migrations\\20240529105019_BDv4.cs",
               "RelativeDocumentMoniker": "apiweb.churras.show\\Migrations\\20240529105019_BDv4.cs",
@@ -513,7 +629,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 27,
               "Title": "LoginController.cs",
               "DocumentMoniker": "C:\\Users\\apbno\\Desktop\\churrasshow_api\\ChurrasAPI\\apiweb.churras.show\\apiweb.churras.show\\Controllers\\LoginController.cs",
               "RelativeDocumentMoniker": "apiweb.churras.show\\Controllers\\LoginController.cs",
@@ -521,35 +637,25 @@
               "RelativeToolTip": "apiweb.churras.show\\Controllers\\LoginController.cs",
               "ViewState": "AQIAACcAAAAAAAAAAAAowD0AAAAjAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-27T00:58:14.482Z"
+              "WhenOpened": "2024-05-27T00:58:14.482Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
-              "Title": "ListarUsuarioResponse.cs",
-              "DocumentMoniker": "C:\\Users\\apbno\\Desktop\\churrasshow_api\\ChurrasAPI\\apiweb.churras.show\\apiweb.churras.show\\Dto\\ListarUsuarioResponse.cs",
-              "RelativeDocumentMoniker": "apiweb.churras.show\\Dto\\ListarUsuarioResponse.cs",
-              "ToolTip": "C:\\Users\\apbno\\Desktop\\churrasshow_api\\ChurrasAPI\\apiweb.churras.show\\apiweb.churras.show\\Dto\\ListarUsuarioResponse.cs",
-              "RelativeToolTip": "apiweb.churras.show\\Dto\\ListarUsuarioResponse.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-27T01:15:09.182Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 29,
               "Title": "Usuario.cs",
               "DocumentMoniker": "C:\\Users\\apbno\\Desktop\\churrasshow_api\\ChurrasAPI\\apiweb.churras.show\\apiweb.churras.show\\Domains\\Usuario.cs",
               "RelativeDocumentMoniker": "apiweb.churras.show\\Domains\\Usuario.cs",
               "ToolTip": "C:\\Users\\apbno\\Desktop\\churrasshow_api\\ChurrasAPI\\apiweb.churras.show\\apiweb.churras.show\\Domains\\Usuario.cs",
               "RelativeToolTip": "apiweb.churras.show\\Domains\\Usuario.cs",
-              "ViewState": "AQIAAAMAAAAAAAAAAAAAACcAAAAiAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAIBJwCcAAAAiAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-23T13:17:29.427Z"
+              "WhenOpened": "2024-05-23T13:17:29.427Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 28,
               "Title": "ListarEventoResponse.cs",
               "DocumentMoniker": "C:\\Users\\apbno\\Desktop\\churrasshow_api\\ChurrasAPI\\apiweb.churras.show\\apiweb.churras.show\\Dto\\ListarEventoResponse.cs",
               "RelativeDocumentMoniker": "apiweb.churras.show\\Dto\\ListarEventoResponse.cs",
@@ -557,11 +663,12 @@
               "RelativeToolTip": "apiweb.churras.show\\Dto\\ListarEventoResponse.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-29T12:28:36.14Z"
+              "WhenOpened": "2024-05-29T12:28:36.14Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 30,
               "Title": "AlterarSenhaViewModel.cs",
               "DocumentMoniker": "C:\\Users\\apbno\\Desktop\\churrasshow_api\\ChurrasAPI\\apiweb.churras.show\\apiweb.churras.show\\ViewModels\\AlterarSenhaViewModel.cs",
               "RelativeDocumentMoniker": "apiweb.churras.show\\ViewModels\\AlterarSenhaViewModel.cs",
@@ -569,11 +676,12 @@
               "RelativeToolTip": "apiweb.churras.show\\ViewModels\\AlterarSenhaViewModel.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-27T11:50:32.796Z"
+              "WhenOpened": "2024-05-27T11:50:32.796Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
+              "DocumentIndex": 31,
               "Title": "IEventoRepository.cs",
               "DocumentMoniker": "C:\\Users\\apbno\\Desktop\\churrasshow_api\\ChurrasAPI\\apiweb.churras.show\\apiweb.churras.show\\Interfaces\\IEventoRepository.cs",
               "RelativeDocumentMoniker": "apiweb.churras.show\\Interfaces\\IEventoRepository.cs",
@@ -581,11 +689,12 @@
               "RelativeToolTip": "apiweb.churras.show\\Interfaces\\IEventoRepository.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAFAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-28T19:56:20.925Z"
+              "WhenOpened": "2024-05-28T19:56:20.925Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 25,
+              "DocumentIndex": 32,
               "Title": "IEventoService.cs",
               "DocumentMoniker": "C:\\Users\\apbno\\Desktop\\churrasshow_api\\ChurrasAPI\\apiweb.churras.show\\apiweb.churras.show\\Interfaces\\IEventoService.cs",
               "RelativeDocumentMoniker": "apiweb.churras.show\\Interfaces\\IEventoService.cs",
@@ -593,11 +702,12 @@
               "RelativeToolTip": "apiweb.churras.show\\Interfaces\\IEventoService.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAjAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-28T18:28:36.202Z"
+              "WhenOpened": "2024-05-28T18:28:36.202Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 26,
+              "DocumentIndex": 33,
               "Title": "LoginViewModel.cs",
               "DocumentMoniker": "C:\\Users\\apbno\\Desktop\\churrasshow_api\\ChurrasAPI\\apiweb.churras.show\\apiweb.churras.show\\ViewModels\\LoginViewModel.cs",
               "RelativeDocumentMoniker": "apiweb.churras.show\\ViewModels\\LoginViewModel.cs",
@@ -605,11 +715,12 @@
               "RelativeToolTip": "apiweb.churras.show\\ViewModels\\LoginViewModel.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAuAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-27T00:50:16.667Z"
+              "WhenOpened": "2024-05-27T00:50:16.667Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 27,
+              "DocumentIndex": 34,
               "Title": "UsuarioViewModel.cs",
               "DocumentMoniker": "C:\\Users\\apbno\\Desktop\\churrasshow_api\\ChurrasAPI\\apiweb.churras.show\\apiweb.churras.show\\ViewModels\\UsuarioViewModel.cs",
               "RelativeDocumentMoniker": "apiweb.churras.show\\ViewModels\\UsuarioViewModel.cs",
@@ -617,23 +728,12 @@
               "RelativeToolTip": "apiweb.churras.show\\ViewModels\\UsuarioViewModel.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-26T23:38:54.85Z"
+              "WhenOpened": "2024-05-26T23:38:54.85Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 28,
-              "Title": "EnderecoController.cs",
-              "DocumentMoniker": "C:\\Users\\apbno\\Desktop\\churrasshow_api\\ChurrasAPI\\apiweb.churras.show\\apiweb.churras.show\\Controllers\\EnderecoController.cs",
-              "RelativeDocumentMoniker": "apiweb.churras.show\\Controllers\\EnderecoController.cs",
-              "ToolTip": "C:\\Users\\apbno\\Desktop\\churrasshow_api\\ChurrasAPI\\apiweb.churras.show\\apiweb.churras.show\\Controllers\\EnderecoController.cs",
-              "RelativeToolTip": "apiweb.churras.show\\Controllers\\EnderecoController.cs",
-              "ViewState": "AQIAAA8AAAAAAAAAAAAAwBUAAAAIAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-27T22:07:33.103Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 29,
+              "DocumentIndex": 35,
               "Title": "IPacoteRepository.cs",
               "DocumentMoniker": "C:\\Users\\apbno\\Desktop\\churrasshow_api\\ChurrasAPI\\apiweb.churras.show\\apiweb.churras.show\\Interfaces\\IPacoteRepository.cs",
               "RelativeDocumentMoniker": "apiweb.churras.show\\Interfaces\\IPacoteRepository.cs",
@@ -641,11 +741,12 @@
               "RelativeToolTip": "apiweb.churras.show\\Interfaces\\IPacoteRepository.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAIAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-27T23:11:47.23Z"
+              "WhenOpened": "2024-05-27T23:11:47.23Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 30,
+              "DocumentIndex": 36,
               "Title": "CriarEventoViewModel.cs",
               "DocumentMoniker": "C:\\Users\\apbno\\Desktop\\churrasshow_api\\ChurrasAPI\\apiweb.churras.show\\apiweb.churras.show\\ViewModels\\CriarEventoViewModel.cs",
               "RelativeDocumentMoniker": "apiweb.churras.show\\ViewModels\\CriarEventoViewModel.cs",
@@ -653,11 +754,12 @@
               "RelativeToolTip": "apiweb.churras.show\\ViewModels\\CriarEventoViewModel.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAwwBMAAAArAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-28T18:21:24.797Z"
+              "WhenOpened": "2024-05-28T18:21:24.797Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 31,
+              "DocumentIndex": 37,
               "Title": "CriarUsuarioClienteViewModel.cs",
               "DocumentMoniker": "C:\\Users\\apbno\\Desktop\\churrasshow_api\\ChurrasAPI\\apiweb.churras.show\\apiweb.churras.show\\ViewModels\\CriarUsuarioClienteViewModel.cs",
               "RelativeDocumentMoniker": "apiweb.churras.show\\ViewModels\\CriarUsuarioClienteViewModel.cs",
@@ -665,11 +767,12 @@
               "RelativeToolTip": "apiweb.churras.show\\ViewModels\\CriarUsuarioClienteViewModel.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAIAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-26T23:40:20.264Z"
+              "WhenOpened": "2024-05-26T23:40:20.264Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 32,
+              "DocumentIndex": 38,
               "Title": "ListarUsuariosResponseItem.cs",
               "DocumentMoniker": "C:\\Users\\apbno\\Desktop\\churrasshow_api\\ChurrasAPI\\apiweb.churras.show\\apiweb.churras.show\\Dto\\ListarUsuariosResponseItem.cs",
               "RelativeDocumentMoniker": "apiweb.churras.show\\Dto\\ListarUsuariosResponseItem.cs",
@@ -677,11 +780,12 @@
               "RelativeToolTip": "apiweb.churras.show\\Dto\\ListarUsuariosResponseItem.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-27T01:15:51.887Z"
+              "WhenOpened": "2024-05-27T01:15:51.887Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 33,
+              "DocumentIndex": 39,
               "Title": "Pacotes.cs",
               "DocumentMoniker": "C:\\Users\\apbno\\Desktop\\churrasshow_api\\ChurrasAPI\\apiweb.churras.show\\apiweb.churras.show\\Domains\\Pacotes.cs",
               "RelativeDocumentMoniker": "apiweb.churras.show\\Domains\\Pacotes.cs",
@@ -689,11 +793,12 @@
               "RelativeToolTip": "apiweb.churras.show\\Domains\\Pacotes.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAABYAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-26T22:12:31.618Z"
+              "WhenOpened": "2024-05-26T22:12:31.618Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 35,
+              "DocumentIndex": 41,
               "Title": "StatusEvento.cs",
               "DocumentMoniker": "C:\\Users\\apbno\\Desktop\\churrasshow_api\\ChurrasAPI\\apiweb.churras.show\\apiweb.churras.show\\Domains\\StatusEvento.cs",
               "RelativeDocumentMoniker": "apiweb.churras.show\\Domains\\StatusEvento.cs",
@@ -701,11 +806,12 @@
               "RelativeToolTip": "apiweb.churras.show\\Domains\\StatusEvento.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAYAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-26T22:06:03.952Z"
+              "WhenOpened": "2024-05-26T22:06:03.952Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 36,
+              "DocumentIndex": 42,
               "Title": "Evento.cs",
               "DocumentMoniker": "C:\\Users\\apbno\\Desktop\\churrasshow_api\\ChurrasAPI\\apiweb.churras.show\\apiweb.churras.show\\Domains\\Evento.cs",
               "RelativeDocumentMoniker": "apiweb.churras.show\\Domains\\Evento.cs",
@@ -713,11 +819,12 @@
               "RelativeToolTip": "apiweb.churras.show\\Domains\\Evento.cs",
               "ViewState": "AQIAADYAAAAAAAAAAAAuwCsAAAAkAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-23T22:34:21.398Z"
+              "WhenOpened": "2024-05-23T22:34:21.398Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 34,
+              "DocumentIndex": 40,
               "Title": "Endereco.cs",
               "DocumentMoniker": "C:\\Users\\apbno\\Desktop\\churrasshow_api\\ChurrasAPI\\apiweb.churras.show\\apiweb.churras.show\\Domains\\Endereco.cs",
               "RelativeDocumentMoniker": "apiweb.churras.show\\Domains\\Endereco.cs",
@@ -725,11 +832,12 @@
               "RelativeToolTip": "apiweb.churras.show\\Domains\\Endereco.cs",
               "ViewState": "AQIAAAoAAAAAAAAAAAAmwBsAAAArAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-23T21:42:28.412Z"
+              "WhenOpened": "2024-05-23T21:42:28.412Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 37,
+              "DocumentIndex": 43,
               "Title": "EventoConstantes.cs",
               "DocumentMoniker": "C:\\Users\\apbno\\Desktop\\churrasshow_api\\ChurrasAPI\\apiweb.churras.show\\apiweb.churras.show\\Utils\\EventoConstantes.cs",
               "RelativeDocumentMoniker": "apiweb.churras.show\\Utils\\EventoConstantes.cs",
@@ -737,11 +845,12 @@
               "RelativeToolTip": "apiweb.churras.show\\Utils\\EventoConstantes.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAABJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-28T18:19:56.322Z"
+              "WhenOpened": "2024-05-28T18:19:56.322Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 38,
+              "DocumentIndex": 44,
               "Title": "PacotesController.cs",
               "DocumentMoniker": "C:\\Users\\apbno\\Desktop\\churrasshow_api\\ChurrasAPI\\apiweb.churras.show\\apiweb.churras.show\\Controllers\\PacotesController.cs",
               "RelativeDocumentMoniker": "apiweb.churras.show\\Controllers\\PacotesController.cs",
@@ -749,11 +858,12 @@
               "RelativeToolTip": "apiweb.churras.show\\Controllers\\PacotesController.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAD4AAAAwAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-27T23:14:58.021Z"
+              "WhenOpened": "2024-05-27T23:14:58.021Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 39,
+              "DocumentIndex": 45,
               "Title": "EmailSendingService.cs",
               "DocumentMoniker": "C:\\Users\\apbno\\Desktop\\churrasshow_api\\ChurrasAPI\\apiweb.churras.show\\apiweb.churras.show\\Utils\\Mail\\EmailSendingService.cs",
               "RelativeDocumentMoniker": "apiweb.churras.show\\Utils\\Mail\\EmailSendingService.cs",
@@ -761,11 +871,12 @@
               "RelativeToolTip": "apiweb.churras.show\\Utils\\Mail\\EmailSendingService.cs",
               "ViewState": "AQIAAEMAAAAAAAAAAAAkwDsAAAAtAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-27T11:55:31.493Z"
+              "WhenOpened": "2024-05-27T11:55:31.493Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 40,
+              "DocumentIndex": 46,
               "Title": "IUsuarioRepository.cs",
               "DocumentMoniker": "C:\\Users\\apbno\\Desktop\\churrasshow_api\\ChurrasAPI\\apiweb.churras.show\\apiweb.churras.show\\Interfaces\\IUsuarioRepository.cs",
               "RelativeDocumentMoniker": "apiweb.churras.show\\Interfaces\\IUsuarioRepository.cs",
@@ -773,23 +884,12 @@
               "RelativeToolTip": "apiweb.churras.show\\Interfaces\\IUsuarioRepository.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAqwBAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-26T22:53:04.812Z"
+              "WhenOpened": "2024-05-26T22:53:04.812Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 41,
-              "Title": "IUsuarioService.cs",
-              "DocumentMoniker": "C:\\Users\\apbno\\Desktop\\churrasshow_api\\ChurrasAPI\\apiweb.churras.show\\apiweb.churras.show\\Interfaces\\IUsuarioService.cs",
-              "RelativeDocumentMoniker": "apiweb.churras.show\\Interfaces\\IUsuarioService.cs",
-              "ToolTip": "C:\\Users\\apbno\\Desktop\\churrasshow_api\\ChurrasAPI\\apiweb.churras.show\\apiweb.churras.show\\Interfaces\\IUsuarioService.cs",
-              "RelativeToolTip": "apiweb.churras.show\\Interfaces\\IUsuarioService.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAFAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-27T01:29:05.923Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 42,
+              "DocumentIndex": 47,
               "Title": "RecuperarSenhaController.cs",
               "DocumentMoniker": "C:\\Users\\apbno\\Desktop\\churrasshow_api\\ChurrasAPI\\apiweb.churras.show\\apiweb.churras.show\\Controllers\\RecuperarSenhaController.cs",
               "RelativeDocumentMoniker": "apiweb.churras.show\\Controllers\\RecuperarSenhaController.cs",
@@ -797,11 +897,12 @@
               "RelativeToolTip": "apiweb.churras.show\\Controllers\\RecuperarSenhaController.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAACUAAAAyAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-27T11:52:24.522Z"
+              "WhenOpened": "2024-05-27T11:52:24.522Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 43,
+              "DocumentIndex": 48,
               "Title": "EmailSettings.cs",
               "DocumentMoniker": "C:\\Users\\apbno\\Desktop\\churrasshow_api\\ChurrasAPI\\apiweb.churras.show\\apiweb.churras.show\\Utils\\Mail\\EmailSettings.cs",
               "RelativeDocumentMoniker": "apiweb.churras.show\\Utils\\Mail\\EmailSettings.cs",
@@ -809,11 +910,12 @@
               "RelativeToolTip": "apiweb.churras.show\\Utils\\Mail\\EmailSettings.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAlAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-27T11:56:37.786Z"
+              "WhenOpened": "2024-05-27T11:56:37.786Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 45,
+              "DocumentIndex": 50,
               "Title": "MailRequest.cs",
               "DocumentMoniker": "C:\\Users\\apbno\\Desktop\\churrasshow_api\\ChurrasAPI\\apiweb.churras.show\\apiweb.churras.show\\Utils\\Mail\\MailRequest.cs",
               "RelativeDocumentMoniker": "apiweb.churras.show\\Utils\\Mail\\MailRequest.cs",
@@ -821,11 +923,12 @@
               "RelativeToolTip": "apiweb.churras.show\\Utils\\Mail\\MailRequest.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-27T11:57:29.402Z"
+              "WhenOpened": "2024-05-27T11:57:29.402Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 44,
+              "DocumentIndex": 49,
               "Title": "IEmailService.cs",
               "DocumentMoniker": "C:\\Users\\apbno\\Desktop\\churrasshow_api\\ChurrasAPI\\apiweb.churras.show\\apiweb.churras.show\\Utils\\Mail\\IEmailService.cs",
               "RelativeDocumentMoniker": "apiweb.churras.show\\Utils\\Mail\\IEmailService.cs",
@@ -833,23 +936,25 @@
               "RelativeToolTip": "apiweb.churras.show\\Utils\\Mail\\IEmailService.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-27T11:59:17.966Z"
+              "WhenOpened": "2024-05-27T11:59:17.966Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 46,
+              "DocumentIndex": 51,
               "Title": "apiweb.churras.show.csproj",
               "DocumentMoniker": "C:\\Users\\apbno\\Desktop\\churrasshow_api\\ChurrasAPI\\apiweb.churras.show\\apiweb.churras.show\\apiweb.churras.show.csproj",
               "RelativeDocumentMoniker": "apiweb.churras.show\\apiweb.churras.show.csproj",
               "ToolTip": "C:\\Users\\apbno\\Desktop\\churrasshow_api\\ChurrasAPI\\apiweb.churras.show\\apiweb.churras.show\\apiweb.churras.show.csproj",
               "RelativeToolTip": "apiweb.churras.show\\apiweb.churras.show.csproj",
-              "ViewState": "AQIAAAYAAAAAAAAAAAAAABQAAABUAAAA",
+              "ViewState": "AQIAAAMAAAAAAAAAAIBJwBUAAABUAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2024-05-23T13:11:47.203Z"
+              "WhenOpened": "2024-05-23T13:11:47.203Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 48,
+              "DocumentIndex": 53,
               "Title": "20240527135222_BDv2.cs",
               "DocumentMoniker": "C:\\Users\\apbno\\Desktop\\churrasshow_api\\ChurrasAPI\\apiweb.churras.show\\apiweb.churras.show\\Migrations\\20240527135222_BDv2.cs",
               "RelativeDocumentMoniker": "apiweb.churras.show\\Migrations\\20240527135222_BDv2.cs",
@@ -857,11 +962,12 @@
               "RelativeToolTip": "apiweb.churras.show\\Migrations\\20240527135222_BDv2.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-27T13:52:23.144Z"
+              "WhenOpened": "2024-05-27T13:52:23.144Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 50,
+              "DocumentIndex": 55,
               "Title": ".cs",
               "DocumentMoniker": "C:\\Users\\apbno\\Desktop\\churrasshow_api\\ChurrasAPI\\apiweb.churras.show\\apiweb.churras.show\\Migrations\\.cs",
               "RelativeDocumentMoniker": "apiweb.churras.show\\Migrations\\.cs",
@@ -869,11 +975,12 @@
               "RelativeToolTip": "apiweb.churras.show\\Migrations\\.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-27T21:48:25.625Z"
+              "WhenOpened": "2024-05-27T21:48:25.625Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 47,
+              "DocumentIndex": 52,
               "Title": "WeatherForecastController.cs",
               "DocumentMoniker": "C:\\Users\\apbno\\Desktop\\churrasshow_api\\ChurrasAPI\\apiweb.churras.show\\apiweb.churras.show\\Controllers\\WeatherForecastController.cs",
               "RelativeDocumentMoniker": "apiweb.churras.show\\Controllers\\WeatherForecastController.cs",
@@ -881,11 +988,12 @@
               "RelativeToolTip": "apiweb.churras.show\\Controllers\\WeatherForecastController.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-29T10:54:11.875Z"
+              "WhenOpened": "2024-05-29T10:54:11.875Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 51,
+              "DocumentIndex": 56,
               "Title": "appsettings.Development.json",
               "DocumentMoniker": "C:\\Users\\apbno\\Desktop\\churrasshow_api\\ChurrasAPI\\apiweb.churras.show\\apiweb.churras.show\\appsettings.Development.json",
               "RelativeDocumentMoniker": "apiweb.churras.show\\appsettings.Development.json",
@@ -893,11 +1001,12 @@
               "RelativeToolTip": "apiweb.churras.show\\appsettings.Development.json",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-05-26T22:01:52.071Z"
+              "WhenOpened": "2024-05-26T22:01:52.071Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 49,
+              "DocumentIndex": 54,
               "Title": "20240526223229_BDv1.cs",
               "DocumentMoniker": "C:\\Users\\apbno\\Desktop\\churrasshow_api\\ChurrasAPI\\apiweb.churras.show\\apiweb.churras.show\\Migrations\\20240526223229_BDv1.cs",
               "RelativeDocumentMoniker": "apiweb.churras.show\\Migrations\\20240526223229_BDv1.cs",
@@ -905,11 +1014,12 @@
               "RelativeToolTip": "apiweb.churras.show\\Migrations\\20240526223229_BDv1.cs",
               "ViewState": "AQIAAGcAAAAAAAAAAAAgwIkAAAA8AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-26T22:32:29.185Z"
+              "WhenOpened": "2024-05-26T22:32:29.185Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 52,
+              "DocumentIndex": 57,
               "Title": "Criptografia.cs",
               "DocumentMoniker": "C:\\Users\\apbno\\Desktop\\churrasshow_api\\ChurrasAPI\\apiweb.churras.show\\apiweb.churras.show\\Utils\\Criptografia.cs",
               "RelativeDocumentMoniker": "apiweb.churras.show\\Utils\\Criptografia.cs",
@@ -917,11 +1027,12 @@
               "RelativeToolTip": "apiweb.churras.show\\Utils\\Criptografia.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-26T23:02:32.548Z"
+              "WhenOpened": "2024-05-26T23:02:32.548Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 53,
+              "DocumentIndex": 58,
               "Title": "UnitOfWork.cs",
               "DocumentMoniker": "C:\\Users\\apbno\\Desktop\\churrasshow_api\\ChurrasAPI\\apiweb.churras.show\\apiweb.churras.show\\UnitOfWork.cs",
               "RelativeDocumentMoniker": "apiweb.churras.show\\UnitOfWork.cs",
@@ -929,11 +1040,12 @@
               "RelativeToolTip": "apiweb.churras.show\\UnitOfWork.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABgAAAABAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-28T20:06:34.587Z"
+              "WhenOpened": "2024-05-28T20:06:34.587Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 54,
+              "DocumentIndex": 59,
               "Title": "IUnitOfWork.cs",
               "DocumentMoniker": "C:\\Users\\apbno\\Desktop\\churrasshow_api\\ChurrasAPI\\apiweb.churras.show\\apiweb.churras.show\\Interfaces\\IUnitOfWork.cs",
               "RelativeDocumentMoniker": "apiweb.churras.show\\Interfaces\\IUnitOfWork.cs",
@@ -941,23 +1053,12 @@
               "RelativeToolTip": "apiweb.churras.show\\Interfaces\\IUnitOfWork.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-28T20:04:45.842Z"
+              "WhenOpened": "2024-05-28T20:04:45.842Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 55,
-              "Title": "IEnderecoRepository.cs",
-              "DocumentMoniker": "C:\\Users\\apbno\\Desktop\\churrasshow_api\\ChurrasAPI\\apiweb.churras.show\\apiweb.churras.show\\Interfaces\\IEnderecoRepository.cs",
-              "RelativeDocumentMoniker": "apiweb.churras.show\\Interfaces\\IEnderecoRepository.cs",
-              "ToolTip": "C:\\Users\\apbno\\Desktop\\churrasshow_api\\ChurrasAPI\\apiweb.churras.show\\apiweb.churras.show\\Interfaces\\IEnderecoRepository.cs",
-              "RelativeToolTip": "apiweb.churras.show\\Interfaces\\IEnderecoRepository.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-27T21:53:27.974Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 57,
+              "DocumentIndex": 61,
               "Title": "IStatusEventoRepository.cs",
               "DocumentMoniker": "C:\\Users\\apbno\\Desktop\\churrasshow_api\\ChurrasAPI\\apiweb.churras.show\\apiweb.churras.show\\Interfaces\\IStatusEventoRepository.cs",
               "RelativeDocumentMoniker": "apiweb.churras.show\\Interfaces\\IStatusEventoRepository.cs",
@@ -965,11 +1066,12 @@
               "RelativeToolTip": "apiweb.churras.show\\Interfaces\\IStatusEventoRepository.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAIAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-27T22:32:48.675Z"
+              "WhenOpened": "2024-05-27T22:32:48.675Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 56,
+              "DocumentIndex": 60,
               "Title": "ITiposUsuarioRepository.cs",
               "DocumentMoniker": "C:\\Users\\apbno\\Desktop\\churrasshow_api\\ChurrasAPI\\apiweb.churras.show\\apiweb.churras.show\\Interfaces\\ITiposUsuarioRepository.cs",
               "RelativeDocumentMoniker": "apiweb.churras.show\\Interfaces\\ITiposUsuarioRepository.cs",
@@ -977,11 +1079,12 @@
               "RelativeToolTip": "apiweb.churras.show\\Interfaces\\ITiposUsuarioRepository.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAZAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-27T22:43:25.536Z"
+              "WhenOpened": "2024-05-27T22:43:25.536Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 58,
+              "DocumentIndex": 62,
               "Title": "StatusEventoController.cs",
               "DocumentMoniker": "C:\\Users\\apbno\\Desktop\\churrasshow_api\\ChurrasAPI\\apiweb.churras.show\\apiweb.churras.show\\Controllers\\StatusEventoController.cs",
               "RelativeDocumentMoniker": "apiweb.churras.show\\Controllers\\StatusEventoController.cs",
@@ -989,23 +1092,12 @@
               "RelativeToolTip": "apiweb.churras.show\\Controllers\\StatusEventoController.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAIAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-27T22:41:08.506Z"
+              "WhenOpened": "2024-05-27T22:41:08.506Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 59,
-              "Title": "Comentarios.cs",
-              "DocumentMoniker": "C:\\Users\\apbno\\Desktop\\churrasshow_api\\ChurrasAPI\\apiweb.churras.show\\apiweb.churras.show\\Domains\\Comentarios.cs",
-              "RelativeDocumentMoniker": "apiweb.churras.show\\Domains\\Comentarios.cs",
-              "ToolTip": "C:\\Users\\apbno\\Desktop\\churrasshow_api\\ChurrasAPI\\apiweb.churras.show\\apiweb.churras.show\\Domains\\Comentarios.cs",
-              "RelativeToolTip": "apiweb.churras.show\\Domains\\Comentarios.cs",
-              "ViewState": "AQIAAAYAAAAAAAAAAAAAACEAAAAtAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-26T22:15:07.578Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 60,
+              "DocumentIndex": 63,
               "Title": "TiposUsuario.cs",
               "DocumentMoniker": "C:\\Users\\apbno\\Desktop\\churrasshow_api\\ChurrasAPI\\apiweb.churras.show\\apiweb.churras.show\\Domains\\TiposUsuario.cs",
               "RelativeDocumentMoniker": "apiweb.churras.show\\Domains\\TiposUsuario.cs",
@@ -1013,23 +1105,25 @@
               "RelativeToolTip": "apiweb.churras.show\\Domains\\TiposUsuario.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAIAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-23T13:13:13.318Z"
+              "WhenOpened": "2024-05-23T13:13:13.318Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 61,
+              "DocumentIndex": 64,
               "Title": "ChurrasShowContextModelSnapshot.cs",
               "DocumentMoniker": "C:\\Users\\apbno\\Desktop\\churrasshow_api\\ChurrasAPI\\apiweb.churras.show\\apiweb.churras.show\\Migrations\\ChurrasShowContextModelSnapshot.cs",
               "RelativeDocumentMoniker": "apiweb.churras.show\\Migrations\\ChurrasShowContextModelSnapshot.cs",
               "ToolTip": "C:\\Users\\apbno\\Desktop\\churrasshow_api\\ChurrasAPI\\apiweb.churras.show\\apiweb.churras.show\\Migrations\\ChurrasShowContextModelSnapshot.cs",
               "RelativeToolTip": "apiweb.churras.show\\Migrations\\ChurrasShowContextModelSnapshot.cs",
-              "ViewState": "AQIAAFoAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "ViewState": "AQIAAFcAAAAAAAAAAIBJwAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-27T12:03:22.773Z"
+              "WhenOpened": "2024-05-27T12:03:22.773Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 62,
+              "DocumentIndex": 65,
               "Title": "AzureBlobStorageHelper.cs",
               "DocumentMoniker": "C:\\Users\\apbno\\Desktop\\churrasshow_api\\ChurrasAPI\\apiweb.churras.show\\apiweb.churras.show\\Utils\\BlobStorage\\AzureBlobStorageHelper.cs",
               "RelativeDocumentMoniker": "apiweb.churras.show\\Utils\\BlobStorage\\AzureBlobStorageHelper.cs",
@@ -1037,7 +1131,8 @@
               "RelativeToolTip": "apiweb.churras.show\\Utils\\BlobStorage\\AzureBlobStorageHelper.cs",
               "ViewState": "AQIAABMAAAAAAAAAAAAgwDQAAAABAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-26T23:49:44.253Z"
+              "WhenOpened": "2024-05-26T23:49:44.253Z",
+              "EditorCaption": ""
             }
           ]
         }

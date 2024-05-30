@@ -608,3 +608,7 @@ C:\Users\apbno\Desktop\churrasshow_api\ChurrasAPI\apiweb.churras.show\apiweb.chu
 C:\Users\apbno\Desktop\churrasshow_api\ChurrasAPI\apiweb.churras.show\apiweb.churras.show\obj\Debug\net8.0\apiweb.c.3807A4E3.Up2Date
 C:\Users\apbno\Desktop\churrasshow_api\ChurrasAPI\apiweb.churras.show\apiweb.churras.show\obj\Debug\net8.0\apiweb.churras.show.genruntimeconfig.cache
 C:\Users\apbno\Desktop\churrasshow_api\ChurrasAPI\apiweb.churras.show\apiweb.churras.show\obj\Debug\net8.0\ref\apiweb.churras.show.dll
+C:\Users\apbno\Desktop\churrasshow_api\ChurrasAPI\apiweb.churras.show\apiweb.churras.show\bin\Debug\net8.0\Microsoft.Azure.CognitiveServices.ContentModerator.dll
+C:\Users\apbno\Desktop\churrasshow_api\ChurrasAPI\apiweb.churras.show\apiweb.churras.show\bin\Debug\net8.0\Microsoft.Rest.ClientRuntime.dll
+C:\Users\apbno\Desktop\churrasshow_api\ChurrasAPI\apiweb.churras.show\apiweb.churras.show\bin\Debug\net8.0\Microsoft.Rest.ClientRuntime.Azure.dll
+C:\Users\apbno\Desktop\churrasshow_api\ChurrasAPI\apiweb.churras.show\apiweb.churras.show\bin\Debug\net8.0\Newtonsoft.Json.dll

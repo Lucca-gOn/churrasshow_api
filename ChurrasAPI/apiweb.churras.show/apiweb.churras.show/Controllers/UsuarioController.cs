@@ -39,9 +39,7 @@ namespace apiweb.churras.show.Controllers
                 novoUsuario.CPF = clienteModel.Cpf;
                 novoUsuario.IdTipoUsuario = clienteModel.IdTipoUsuario;
 
-                var connectionString = "DefaultEndpointsProtocol=https;AccountName=blobvitalhub3dm;AccountKey=riD2jTLcs9tBO2F6Hud9o0wsfwx+gR2o566QOrp2DIcMfOOMF3Wt9kUqqGlb1GbKoQXXYLgbxEkz+AStBBaWQQ==;EndpointSuffix=core.windows.net";
-
-                var containerName = "blobvitalcontainermanha";
+                
 
                 novoUsuario.Foto = await AzureBlobStorageHelper.UploadImageBlobAsync(clienteModel.Arquivo!, connectionString, containerName);
 
