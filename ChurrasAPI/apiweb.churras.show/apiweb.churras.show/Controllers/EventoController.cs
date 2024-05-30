@@ -3,6 +3,7 @@ using apiweb.churras.show.Interfaces;
 using apiweb.churras.show.ViewModels;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using System.IdentityModel.Tokens.Jwt;
 
 namespace apiweb.churras.show.Controllers
 {
@@ -77,6 +78,31 @@ namespace apiweb.churras.show.Controllers
             try
             {
                 return Ok(_eventoRepository.ListarTodos());
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(ex.Message);
+            }
+        }
+
+
+        [HttpGet("ListarEventosValorTotal")]
+        public IActionResult ListarEventos()
+        {
+            try
+            {
+                // Obtém o ID do usuário logado dos claims do JWT
+                Guid id = Guid.Parse(HttpContext.User.Claims.First(c => c.Type == JwtRegisteredClaimNames.Jti).Value);
+
+                // Chama o serviço para listar eventos com base no ID do usuário logado
+                var eventos = _eventoService.ListarEventosValorTotal(id);
+
+                if (eventos == null || !eventos.Any())
+                {
+                    return NotFound();
+                }
+
+                return Ok(eventos);
             }
             catch (Exception ex)
             {
