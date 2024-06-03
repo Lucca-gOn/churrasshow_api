@@ -12,10 +12,10 @@ using System.Reflection;
 
 var builder = WebApplication.CreateBuilder(args);
 
-// Add services to the container.
+// Adiciona os serviços ao contêiner.
 builder.Services.AddControllers();
 
-// Register the repositories
+// Registra os repositórios.
 builder.Services.AddScoped<IUsuarioRepository, UsuarioRepository>();
 builder.Services.AddScoped<IEnderecoRepository, EnderecoRepository>();
 builder.Services.AddScoped<IStatusEventoRepository, StatusEventoRepository>();
@@ -24,7 +24,7 @@ builder.Services.AddScoped<IPacoteRepository, PacotesRepository>();
 builder.Services.AddScoped<IEventoRepository, EventoRepository>();
 builder.Services.AddScoped<IComentarioRepository, ComentarioRepository>();
 
-// Register services
+// Registra os serviços.
 builder.Services.AddScoped<IEventoService, EventoService>();
 builder.Services.AddScoped<IUnitOfWork, UnitOfWork>();
 builder.Services.AddScoped<IUsuarioService, UsuarioService>();
@@ -32,9 +32,16 @@ builder.Services.AddTransient<IEmailService, EmailService>();
 builder.Services.AddTransient<EmailSendingService>();
 builder.Services.Configure<EmailSettings>(builder.Configuration.GetSection(nameof(EmailSettings)));
 
-// This line is unnecessary and will cause issues if duplicated
-// services.AddScoped<IEventoService, EventoService>();
+// Configura o CORS.
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy("CorsPolicy",
+        builder => builder.AllowAnyOrigin()
+                          .AllowAnyHeader()
+                          .AllowAnyMethod());
+});
 
+// Configura a conexão com o banco de dados.
 string connectionString = builder.Configuration["ConnectionStrings:Default"];
 
 builder.Services.AddDbContext<ChurrasShowContext>(options =>
@@ -42,29 +49,8 @@ builder.Services.AddDbContext<ChurrasShowContext>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("Default"));
 });
 
-// Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
+// Configura o Swagger para documentação da API.
 builder.Services.AddEndpointsApiExplorer();
-
-// Add JWT Bearer Authentication
-builder.Services.AddAuthentication(options =>
-{
-    options.DefaultChallengeScheme = "JwtBearer";
-    options.DefaultAuthenticateScheme = "JwtBearer";
-})
-.AddJwtBearer("JwtBearer", options =>
-{
-    options.TokenValidationParameters = new TokenValidationParameters
-    {
-        ValidateIssuer = true,
-        ValidateAudience = true,
-        ValidateLifetime = true,
-        IssuerSigningKey = new SymmetricSecurityKey(System.Text.Encoding.UTF8.GetBytes("churrasshow-webapi-chave-symmetricsecuritykey")),
-        ClockSkew = TimeSpan.FromMinutes(10),
-        ValidIssuer = "apiweb.churras.show",
-        ValidAudience = "apiweb.churras.show"
-    };
-});
-
 builder.Services.AddSwaggerGen(options =>
 {
     options.SwaggerDoc("v1", new OpenApiInfo
@@ -108,8 +94,7 @@ builder.Services.AddSwaggerGen(options =>
     });
 });
 
-//Configuração do serviço de moderação de conteúdo - Azure
-//Chave e Endpoint obtidos na azure.
+// Configuração do serviço de moderação de conteúdo - Azure.
 builder.Services.AddSingleton(provider => new ContentModeratorClient(
     new ApiKeyServiceClientCredentials("e1ad89af0c8649c6a48cb4c1606c7d97"))
 {
@@ -117,9 +102,29 @@ builder.Services.AddSingleton(provider => new ContentModeratorClient(
 }
 );
 
+// Configura a autenticação JWT.
+builder.Services.AddAuthentication(options =>
+{
+    options.DefaultChallengeScheme = "JwtBearer";
+    options.DefaultAuthenticateScheme = "JwtBearer";
+})
+.AddJwtBearer("JwtBearer", options =>
+{
+    options.TokenValidationParameters = new TokenValidationParameters
+    {
+        ValidateIssuer = true,
+        ValidateAudience = true,
+        ValidateLifetime = true,
+        IssuerSigningKey = new SymmetricSecurityKey(System.Text.Encoding.UTF8.GetBytes("churrasshow-webapi-chave-symmetricsecuritykey")),
+        ClockSkew = TimeSpan.FromMinutes(10),
+        ValidIssuer = "apiweb.churras.show",
+        ValidAudience = "apiweb.churras.show"
+    };
+});
+
 var app = builder.Build();
 
-// Configure the HTTP request pipeline.
+// Configura o pipeline de requisições HTTP.
 if (app.Environment.IsDevelopment())
 {
     app.UseSwagger();
@@ -128,6 +133,10 @@ if (app.Environment.IsDevelopment())
 
 app.UseHttpsRedirection();
 
+// Usa a política de CORS definida anteriormente.
+app.UseCors("CorsPolicy");
+
+// Usa a autenticação e autorização.
 app.UseAuthentication();
 
 app.UseAuthorization();

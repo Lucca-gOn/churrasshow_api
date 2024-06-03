@@ -1,9 +1,11 @@
 ﻿using apiweb.churras.show.Domains;
 using apiweb.churras.show.Interfaces;
+using apiweb.churras.show.Utils.Mail;
 using apiweb.churras.show.ViewModels;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using System.IdentityModel.Tokens.Jwt;
+using System.Security.Claims;
 
 namespace apiweb.churras.show.Controllers
 {
@@ -15,13 +17,15 @@ namespace apiweb.churras.show.Controllers
         private readonly IEventoRepository _eventoRepository;
         private readonly IEnderecoRepository _enderecoRepository;
         private readonly IUnitOfWork _unitOfWork;
+        private readonly EmailSendingService _emailSendingService;
 
-        public EventoController(IEventoService eventService, IEventoRepository eventRepository, IEnderecoRepository enderecoRepository, IUnitOfWork unitOfWork)
+        public EventoController(IEventoService eventService, IEventoRepository eventRepository, IEnderecoRepository enderecoRepository, IUnitOfWork unitOfWork, EmailSendingService emailSendingService)
         {
             _eventoService = eventService;
             _eventoRepository = eventRepository;
             _enderecoRepository = enderecoRepository;
             _unitOfWork = unitOfWork;
+            _emailSendingService = emailSendingService;
         }
 
         [HttpPost]
@@ -43,6 +47,9 @@ namespace apiweb.churras.show.Controllers
                 Complemento = eventoViewModel.Complemento
             };
 
+            _enderecoRepository.Cadastrar(endereco);
+            await _unitOfWork.CommitAsync();
+
             var evento = new Evento
             {
                 DataHoraEvento = eventoViewModel.DataHoraEvento,
@@ -53,7 +60,7 @@ namespace apiweb.churras.show.Controllers
                 Confirmado = eventoViewModel.Confirmado,
                 Garconete = eventoViewModel.Garconete,
                 IdPacotes = eventoViewModel.IdPacotes,
-                IdEndereco = endereco.IdEndereco,
+                IdEndereco = endereco.IdEndereco, 
                 IdUsuario = eventoViewModel.IdUsuario,
                 IdStatusEvento = eventoViewModel.IdStatusEvento,
                 DataDeCriacao = DateTime.Now
@@ -62,16 +69,25 @@ namespace apiweb.churras.show.Controllers
             // Calcular o valor total do evento
             evento.ValorTotal = await _eventoService.CalcularValorTotal(evento);
 
-            // Salvar o endereço no banco de dados
-            _enderecoRepository.Cadastrar(endereco);
-
             // Salvar o evento no banco de dados
             _eventoRepository.Cadastrar(evento);
+
             await _unitOfWork.CommitAsync();
+
+            var claims = HttpContext.User.Claims;
+            
+            // Obter o email do usuário logado do token JWT
+            var emailClaim = claims.FirstOrDefault(c => c.Type == ClaimTypes.Email);
+            if (emailClaim != null)
+            {
+                string emailUsuario = emailClaim.Value;
+                // Enviar email com os detalhes do evento
+                await _emailSendingService.SendEventDetailsEmail(emailUsuario, evento);
+            }
 
             return Ok(evento);
         }
-        
+
         [HttpGet]
         public IActionResult Get()
         {
