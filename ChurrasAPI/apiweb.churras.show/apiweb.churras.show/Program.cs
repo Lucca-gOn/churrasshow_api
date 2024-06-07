@@ -12,6 +12,9 @@ using System.Reflection;
 
 var builder = WebApplication.CreateBuilder(args);
 
+// Configura o servidor para escutar em todas as interfaces
+builder.WebHost.UseUrls("http://*:5209");
+
 // Adiciona os serviços ao contêiner.
 builder.Services.AddControllers();
 

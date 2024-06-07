@@ -3,6 +3,7 @@ using apiweb.churras.show.Domains;
 using apiweb.churras.show.Dto;
 using apiweb.churras.show.Interfaces;
 using apiweb.churras.show.Utils;
+using apiweb.churras.show.ViewModels;
 
 namespace apiweb.churras.show.Repositories
 {
@@ -38,9 +39,34 @@ namespace apiweb.churras.show.Repositories
             }
         }
 
-        public void Atualizar(Usuario usuario)
+        public void Atualizar(Guid id, AtualizarUsuarioViewModel dadosAtualizados)
         {
-            throw new NotImplementedException();
+            try
+            {
+                Usuario usuarioBuscado = _context.Usuario.FirstOrDefault(x => x.IdUsuario == id)!;
+
+                if (usuarioBuscado != null)
+                {
+                    // Atualiza as informações
+                    usuarioBuscado.Nome = dadosAtualizados.Nome;
+                    usuarioBuscado.Email = dadosAtualizados.Email;
+                    usuarioBuscado.Endereco.Logradouro = dadosAtualizados.Logradouro;
+                    usuarioBuscado.Endereco.Cidade = dadosAtualizados.Cidade;
+                    usuarioBuscado.Endereco.UF = dadosAtualizados.Uf;
+                    usuarioBuscado.Endereco.CEP = dadosAtualizados.Cep;
+                    usuarioBuscado.Endereco.Numero = dadosAtualizados.Numero;
+                    usuarioBuscado.Endereco.Bairro = dadosAtualizados.Bairro;
+                    usuarioBuscado.Endereco.Complemento = dadosAtualizados.Complemento;
+                    usuarioBuscado.Foto = dadosAtualizados.Foto;
+
+                    _context.Update(usuarioBuscado); // Adiciona o Update para garantir que as mudanças sejam rastreadas.
+                    _context.SaveChanges();
+                }
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine(e.InnerException?.ToString() ?? e.Message);
+            }
         }
 
         public Usuario BuscarPorEmailESenha(string email, string senha)
@@ -76,7 +102,7 @@ namespace apiweb.churras.show.Repositories
 
         public Usuario BuscarPorId(Guid id)
         {
-            throw new NotImplementedException();
+            return _context.Usuario.FirstOrDefault(x => x.IdUsuario == id)!;
         }
 
         public void Cadastrar(Usuario novoUsuario)

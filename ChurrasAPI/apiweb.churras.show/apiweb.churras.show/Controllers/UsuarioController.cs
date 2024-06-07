@@ -98,5 +98,55 @@ namespace apiweb.churras.show.Controllers
                 return BadRequest(ex.Message);
             }
         }
+
+        [HttpPut("AtualizarUsuario/{id}")]
+        public async Task<IActionResult> AtualizarUsuario(Guid id, [FromForm] AtualizarUsuarioViewModel dadosAtualizados)
+        {
+            try
+            {
+                Usuario usuarioBuscado = _usuarioRepository.BuscarPorId(id);
+
+                if (usuarioBuscado == null)
+                {
+                    return NotFound("Usuário não encontrado.");
+                }
+
+                // Lógica para upload da foto, se o arquivo foi fornecido
+                if (dadosAtualizados.Arquivo != null)
+                {
+                    
+
+                    string fotoUrl = await AzureBlobStorageHelper.UploadImageBlobAsync(dadosAtualizados.Arquivo, connectionString, containerName);
+
+                    usuarioBuscado.Foto = fotoUrl;
+                }
+
+                // Inicializa a propriedade Endereco se estiver nula
+                if (usuarioBuscado.Endereco == null)
+                {
+                    usuarioBuscado.Endereco = new Endereco();
+                }
+
+                // Atualiza as outras informações
+                usuarioBuscado.Nome = dadosAtualizados.Nome;
+                usuarioBuscado.Email = dadosAtualizados.Email;
+                usuarioBuscado.Endereco.Logradouro = dadosAtualizados.Logradouro;
+                usuarioBuscado.Endereco.Cidade = dadosAtualizados.Cidade;
+                usuarioBuscado.Endereco.UF = dadosAtualizados.Uf;
+                usuarioBuscado.Endereco.CEP = dadosAtualizados.Cep;
+                usuarioBuscado.Endereco.Numero = dadosAtualizados.Numero;
+                usuarioBuscado.Endereco.Bairro = dadosAtualizados.Bairro;
+                usuarioBuscado.Endereco.Complemento = dadosAtualizados.Complemento;
+
+                _usuarioRepository.Atualizar(id, dadosAtualizados);
+
+                return Ok("Usuário atualizado com sucesso.");
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(ex.Message);
+            }
+        }
+
     }
 }

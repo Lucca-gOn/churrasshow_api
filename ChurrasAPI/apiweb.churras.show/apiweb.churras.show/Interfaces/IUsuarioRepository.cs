@@ -1,5 +1,5 @@
 ﻿using apiweb.churras.show.Domains;
-using apiweb.churras.show.Dto;
+using apiweb.churras.show.ViewModels;
 
 namespace apiweb.churras.show.Interfaces
 {
@@ -13,7 +13,7 @@ namespace apiweb.churras.show.Interfaces
 
         void Deletar(Guid idUsuario);
 
-        void Atualizar(Usuario usuario);
+        void Atualizar(Guid id, AtualizarUsuarioViewModel dadosAtualizados);
 
         bool AlterarSenha(string email, string senhaNova);
     }

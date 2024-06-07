@@ -39,7 +39,7 @@ namespace apiweb.churras.show.Utils.BlobStorage
                 else
                 {
                     //Retorna a uri padrao (Imagem)
-                    return "https://blobvitalhub3dm.blob.core.windows.net/blobvitalcontainermanha/NotImage.svg";
+                    return "https://blobchurrasshow.blob.core.windows.net/churrasshow/NotImage.jpg";
 
                 }
             }

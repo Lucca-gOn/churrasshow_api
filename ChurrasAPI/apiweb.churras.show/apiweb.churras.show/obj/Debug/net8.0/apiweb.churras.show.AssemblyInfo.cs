@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("apiweb.churras.show")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+24bac84614d5ed9ca16de19dc5aa941e375993bf")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+9ad0b8c6f153cca514771440489c7c68167632a2")]
 [assembly: System.Reflection.AssemblyProductAttribute("apiweb.churras.show")]
 [assembly: System.Reflection.AssemblyTitleAttribute("apiweb.churras.show")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
