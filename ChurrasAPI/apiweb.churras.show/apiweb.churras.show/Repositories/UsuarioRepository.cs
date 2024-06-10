@@ -4,6 +4,7 @@ using apiweb.churras.show.Dto;
 using apiweb.churras.show.Interfaces;
 using apiweb.churras.show.Utils;
 using apiweb.churras.show.ViewModels;
+using Microsoft.EntityFrameworkCore;
 
 namespace apiweb.churras.show.Repositories
 {
@@ -39,7 +40,41 @@ namespace apiweb.churras.show.Repositories
             }
         }
 
-        public void Atualizar(Guid id, AtualizarUsuarioViewModel dadosAtualizados)
+        public void Atualizar(Guid id, Usuario usuario)
+        {
+            try
+            {
+                Usuario buscarClinica = _context.Usuario.Find(id);
+
+                if (buscarClinica != null)
+                {
+                    buscarClinica.RG = usuario.RG;
+                    buscarClinica.CPF = usuario.CPF;
+
+                    if (usuario.Endereco != null && buscarClinica.Endereco != null)
+                    {
+                        buscarClinica.Endereco.Logradouro = usuario.Endereco.Logradouro;
+                        buscarClinica.Endereco.Cidade = usuario.Endereco.Cidade;
+                        buscarClinica.Endereco.UF = usuario.Endereco.UF;
+                        buscarClinica.Endereco.CEP = usuario.Endereco.CEP;
+                        buscarClinica.Endereco.Numero = usuario.Endereco.Numero;
+                        buscarClinica.Endereco.Bairro = usuario.Endereco.Bairro;
+                        buscarClinica.Endereco.Complemento = usuario.Endereco.Complemento;
+                    }
+
+                    _context.Update(buscarClinica);
+                    _context.SaveChanges();
+                }
+            }
+            catch (Exception)
+            {
+                throw;
+            }
+        }
+
+
+
+        public void AtualizarFoto(Guid id, string novaUrlFoto)
         {
             try
             {
@@ -47,25 +82,14 @@ namespace apiweb.churras.show.Repositories
 
                 if (usuarioBuscado != null)
                 {
-                    // Atualiza as informações
-                    usuarioBuscado.Nome = dadosAtualizados.Nome;
-                    usuarioBuscado.Email = dadosAtualizados.Email;
-                    usuarioBuscado.Endereco.Logradouro = dadosAtualizados.Logradouro;
-                    usuarioBuscado.Endereco.Cidade = dadosAtualizados.Cidade;
-                    usuarioBuscado.Endereco.UF = dadosAtualizados.Uf;
-                    usuarioBuscado.Endereco.CEP = dadosAtualizados.Cep;
-                    usuarioBuscado.Endereco.Numero = dadosAtualizados.Numero;
-                    usuarioBuscado.Endereco.Bairro = dadosAtualizados.Bairro;
-                    usuarioBuscado.Endereco.Complemento = dadosAtualizados.Complemento;
-                    usuarioBuscado.Foto = dadosAtualizados.Foto;
-
-                    _context.Update(usuarioBuscado); // Adiciona o Update para garantir que as mudanças sejam rastreadas.
-                    _context.SaveChanges();
+                    usuarioBuscado.Foto = novaUrlFoto;
                 }
+
+                _context.SaveChanges();
             }
             catch (Exception e)
             {
-                Console.WriteLine(e.InnerException?.ToString() ?? e.Message);
+                Console.WriteLine(e.InnerException.ToString());
             }
         }
 

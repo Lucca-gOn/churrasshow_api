@@ -3,6 +3,7 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using apiweb.churras.show.Context;
 
@@ -11,9 +12,11 @@ using apiweb.churras.show.Context;
 namespace apiweb.churras.show.Migrations
 {
     [DbContext(typeof(ChurrasShowContext))]
-    partial class ChurrasShowContextModelSnapshot : ModelSnapshot
+    [Migration("20240608233045_BDv5")]
+    partial class BDv5
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -200,12 +203,14 @@ namespace apiweb.churras.show.Migrations
                         .HasColumnType("uniqueidentifier");
 
                     b.Property<string>("CPF")
+                        .IsRequired()
                         .HasColumnType("VARCHAR(11)");
 
                     b.Property<int?>("CodRecupSenha")
                         .HasColumnType("INT");
 
                     b.Property<string>("Email")
+                        .IsRequired()
                         .HasColumnType("VARCHAR(255)");
 
                     b.Property<string>("Foto")
@@ -218,31 +223,37 @@ namespace apiweb.churras.show.Migrations
                         .HasColumnType("uniqueidentifier");
 
                     b.Property<string>("Nome")
+                        .IsRequired()
                         .HasColumnType("VARCHAR(100)");
 
                     b.Property<string>("RG")
+                        .IsRequired()
                         .HasColumnType("VARCHAR(9)");
 
+                    b.Property<byte[]>("RowVersion")
+                        .IsConcurrencyToken()
+                        .IsRequired()
+                        .ValueGeneratedOnAddOrUpdate()
+                        .HasColumnType("rowversion");
+
                     b.Property<string>("Senha")
+                        .IsRequired()
                         .HasColumnType("VARCHAR(255)");
 
                     b.HasKey("IdUsuario");
 
                     b.HasIndex("CPF")
-                        .IsUnique()
-                        .HasFilter("[CPF] IS NOT NULL");
+                        .IsUnique();
 
                     b.HasIndex("Email")
-                        .IsUnique()
-                        .HasFilter("[Email] IS NOT NULL");
+                        .IsUnique();
 
                     b.HasIndex("IdEndereco");
 
                     b.HasIndex("IdTipoUsuario");
 
                     b.HasIndex("RG")
-                        .IsUnique()
-                        .HasFilter("[RG] IS NOT NULL");
+                        .IsUnique();
 
                     b.ToTable("Usuario");
                 });

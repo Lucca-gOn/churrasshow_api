@@ -52,5 +52,29 @@
         <member name="M:apiweb.churras.show.Migrations.BDv4.BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)">
             <inheritdoc />
         </member>
+        <member name="T:apiweb.churras.show.Migrations.BDv5">
+            <inheritdoc />
+        </member>
+        <member name="M:apiweb.churras.show.Migrations.BDv5.Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:apiweb.churras.show.Migrations.BDv5.Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:apiweb.churras.show.Migrations.BDv5.BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="T:apiweb.churras.show.Migrations.BDv6">
+            <inheritdoc />
+        </member>
+        <member name="M:apiweb.churras.show.Migrations.BDv6.Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:apiweb.churras.show.Migrations.BDv6.Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:apiweb.churras.show.Migrations.BDv6.BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)">
+            <inheritdoc />
+        </member>
     </members>
 </doc>

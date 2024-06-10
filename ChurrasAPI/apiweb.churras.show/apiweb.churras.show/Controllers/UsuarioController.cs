@@ -99,48 +99,13 @@ namespace apiweb.churras.show.Controllers
             }
         }
 
-        [HttpPut("AtualizarUsuario/{id}")]
-        public async Task<IActionResult> AtualizarUsuario(Guid id, [FromForm] AtualizarUsuarioViewModel dadosAtualizados)
+        [HttpPut("AtualizarUsuario")]
+        public IActionResult AtualizarUsuario(Guid id, [FromBody] Usuario usuario)
         {
             try
             {
-                Usuario usuarioBuscado = _usuarioRepository.BuscarPorId(id);
-
-                if (usuarioBuscado == null)
-                {
-                    return NotFound("Usuário não encontrado.");
-                }
-
-                // Lógica para upload da foto, se o arquivo foi fornecido
-                if (dadosAtualizados.Arquivo != null)
-                {
-                    
-
-                    string fotoUrl = await AzureBlobStorageHelper.UploadImageBlobAsync(dadosAtualizados.Arquivo, connectionString, containerName);
-
-                    usuarioBuscado.Foto = fotoUrl;
-                }
-
-                // Inicializa a propriedade Endereco se estiver nula
-                if (usuarioBuscado.Endereco == null)
-                {
-                    usuarioBuscado.Endereco = new Endereco();
-                }
-
-                // Atualiza as outras informações
-                usuarioBuscado.Nome = dadosAtualizados.Nome;
-                usuarioBuscado.Email = dadosAtualizados.Email;
-                usuarioBuscado.Endereco.Logradouro = dadosAtualizados.Logradouro;
-                usuarioBuscado.Endereco.Cidade = dadosAtualizados.Cidade;
-                usuarioBuscado.Endereco.UF = dadosAtualizados.Uf;
-                usuarioBuscado.Endereco.CEP = dadosAtualizados.Cep;
-                usuarioBuscado.Endereco.Numero = dadosAtualizados.Numero;
-                usuarioBuscado.Endereco.Bairro = dadosAtualizados.Bairro;
-                usuarioBuscado.Endereco.Complemento = dadosAtualizados.Complemento;
-
-                _usuarioRepository.Atualizar(id, dadosAtualizados);
-
-                return Ok("Usuário atualizado com sucesso.");
+                _usuarioRepository.Atualizar(id, usuario);
+                return StatusCode(200);
             }
             catch (Exception ex)
             {
@@ -148,5 +113,36 @@ namespace apiweb.churras.show.Controllers
             }
         }
 
+        [HttpPut("AlterarFotoPerfil")]
+        public async Task<IActionResult> UpdateProfileImage(Guid id, [FromForm] UsuarioViewModel form)
+        {
+            try
+            {
+
+                Usuario usuarioBuscado = _usuarioRepository.BuscarPorId(id);
+
+
+                if (usuarioBuscado == null)
+                {
+                    return NotFound();
+                }
+
+
+                
+
+                string fotoUrl = await AzureBlobStorageHelper.UploadImageBlobAsync(form.Arquivo!, connectionString!, containerName!);
+
+
+                usuarioBuscado.Foto = fotoUrl;
+
+                _usuarioRepository.AtualizarFoto(id, fotoUrl);
+
+                return Ok();
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(ex.Message);
+            }
+        }
     }
 }
