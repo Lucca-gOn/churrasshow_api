@@ -9,16 +9,22 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
 using Microsoft.OpenApi.Models;
 using System.Reflection;
+using Microsoft.AspNetCore.Authentication;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.Identity.Web;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Configura o servidor para escutar em todas as interfaces
 builder.WebHost.UseUrls("http://*:5209");
 
-// Adiciona os serviços ao contêiner.
+builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
+    .AddMicrosoftIdentityWebApi(builder.Configuration.GetSection("AzureAd"));
+
+// Adiciona os serviï¿½os ao contï¿½iner.
 builder.Services.AddControllers();
 
-// Registra os repositórios.
+// Registra os repositï¿½rios.
 builder.Services.AddScoped<IUsuarioRepository, UsuarioRepository>();
 builder.Services.AddScoped<IEnderecoRepository, EnderecoRepository>();
 builder.Services.AddScoped<IStatusEventoRepository, StatusEventoRepository>();
@@ -27,7 +33,7 @@ builder.Services.AddScoped<IPacoteRepository, PacotesRepository>();
 builder.Services.AddScoped<IEventoRepository, EventoRepository>();
 builder.Services.AddScoped<IComentarioRepository, ComentarioRepository>();
 
-// Registra os serviços.
+// Registra os serviï¿½os.
 builder.Services.AddScoped<IEventoService, EventoService>();
 builder.Services.AddScoped<IUnitOfWork, UnitOfWork>();
 builder.Services.AddScoped<IUsuarioService, UsuarioService>();
@@ -44,7 +50,7 @@ builder.Services.AddCors(options =>
                           .AllowAnyMethod());
 });
 
-// Configura a conexão com o banco de dados.
+// Configura a conexï¿½o com o banco de dados.
 string connectionString = builder.Configuration["ConnectionStrings:Default"];
 
 builder.Services.AddDbContext<ChurrasShowContext>(options =>
@@ -52,7 +58,7 @@ builder.Services.AddDbContext<ChurrasShowContext>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("Default"));
 });
 
-// Configura o Swagger para documentação da API.
+// Configura o Swagger para documentaï¿½ï¿½o da API.
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen(options =>
 {
@@ -60,10 +66,10 @@ builder.Services.AddSwaggerGen(options =>
     {
         Version = "v1",
         Title = "API ChurrasShow",
-        Description = "API Para Gerenciamento de Eventos e Orçamento - ChurrasShow WEB.API",
+        Description = "API Para Gerenciamento de Eventos e Orï¿½amento - ChurrasShow WEB.API",
         Contact = new OpenApiContact
         {
-            Name = "Alunos - Senai Informática",
+            Name = "Alunos - Senai Informï¿½tica",
             Url = new Uri("https://github.com/BrizidoAndre/ChurrasShow")
         },
     });
@@ -97,7 +103,7 @@ builder.Services.AddSwaggerGen(options =>
     });
 });
 
-// Configuração do serviço de moderação de conteúdo - Azure.
+// Configuraï¿½ï¿½o do serviï¿½o de moderaï¿½ï¿½o de conteï¿½do - Azure.
 builder.Services.AddSingleton(provider => new ContentModeratorClient(
     new ApiKeyServiceClientCredentials("e1ad89af0c8649c6a48cb4c1606c7d97"))
 {
@@ -105,7 +111,7 @@ builder.Services.AddSingleton(provider => new ContentModeratorClient(
 }
 );
 
-// Configura a autenticação JWT.
+// Configura a autenticaï¿½ï¿½o JWT.
 builder.Services.AddAuthentication(options =>
 {
     options.DefaultChallengeScheme = "JwtBearer";
@@ -127,7 +133,7 @@ builder.Services.AddAuthentication(options =>
 
 var app = builder.Build();
 
-// Configura o pipeline de requisições HTTP.
+// Configura o pipeline de requisiï¿½ï¿½es HTTP.
 if (app.Environment.IsDevelopment())
 {
     app.UseSwagger();
@@ -136,10 +142,10 @@ if (app.Environment.IsDevelopment())
 
 app.UseHttpsRedirection();
 
-// Usa a política de CORS definida anteriormente.
+// Usa a polï¿½tica de CORS definida anteriormente.
 app.UseCors("CorsPolicy");
 
-// Usa a autenticação e autorização.
+// Usa a autenticaï¿½ï¿½o e autorizaï¿½ï¿½o.
 app.UseAuthentication();
 
 app.UseAuthorization();

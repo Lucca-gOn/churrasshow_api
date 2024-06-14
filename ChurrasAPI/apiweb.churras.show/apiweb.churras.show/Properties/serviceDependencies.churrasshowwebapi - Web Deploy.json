@@ -1,0 +1,12 @@
+{
+  "dependencies": {
+    "apis1": {
+      "resourceId": "/subscriptions/[parameters('subscriptionId')]/resourceGroups/[parameters('resourceGroupName')]/providers/Microsoft.ApiManagement/service/apiwebchurrasshowapi/apis/apiwebchurrasshow",
+      "type": "apis.azure"
+    },
+    "identityapp1": {
+      "connectionInfo": "App registration: API, Tenant: SESISENAISP - Escolas (sesisenaispedu.onmicrosoft.com - Microsoft Entra ID)",
+      "type": "identityapp.default"
+    }
+  }
+}

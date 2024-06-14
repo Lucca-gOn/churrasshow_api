@@ -26,18 +26,8 @@ namespace apiweb.churras.show.ViewModels
         
         [Required(ErrorMessage = "Cidade é obrigatória")]
         public string? Cidade { get; set; }
-        
-        [Required(ErrorMessage = "UF é obrigatória")]
-        public string? UF { get; set; }
-        
-        [Required(ErrorMessage = "CEP é obrigatório")]
-        public int? Cep { get; set; }
 
         [Required(ErrorMessage = "Número é obrigatório")]
-        public int? Numero { get; set; }
-
-        public string? Bairro { get; set; }
-        public string? Complemento { get; set; }
-        
+        public int? Numero { get; set; }     
     }
 }

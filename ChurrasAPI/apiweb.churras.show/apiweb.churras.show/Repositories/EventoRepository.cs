@@ -1,6 +1,7 @@
 ﻿using apiweb.churras.show.Context;
 using apiweb.churras.show.Domains;
 using apiweb.churras.show.Interfaces;
+using apiweb.churras.show.ViewModels;
 using Microsoft.EntityFrameworkCore;
 
 namespace apiweb.churras.show.Repositories
@@ -13,6 +14,27 @@ namespace apiweb.churras.show.Repositories
         {
             _context = churrasShowContext;
         }
+
+        public void AtualizarStatus(Guid id, AtualizarStatusEventoViewModel model)
+        {
+            try
+            {
+                Evento eventoExistente = _context.Evento.FirstOrDefault(u => u.IdEvento == id)!;
+
+                if (eventoExistente != null)
+                {
+                    eventoExistente.IdStatusEvento = model.IdStatusEvento;
+
+                    _context.Update(eventoExistente);
+                    _context.SaveChanges();
+                }
+            }
+            catch (Exception ex)
+            {
+                throw new Exception("Erro ao atualizar status evento", ex);
+            }
+        }
+
         public void Cadastrar(Evento novoEvento)
         {
             try

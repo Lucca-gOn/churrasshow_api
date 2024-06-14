@@ -61,6 +61,10 @@
               "target": "Package",
               "version": "[8.0.5, )"
             },
+            "Microsoft.AspNetCore.Authentication.OpenIdConnect": {
+              "target": "Package",
+              "version": "[8.0.0, )"
+            },
             "Microsoft.Azure.CognitiveServices.ContentModerator": {
               "target": "Package",
               "version": "[2.0.0, )"
@@ -80,6 +84,14 @@
               "suppressParent": "All",
               "target": "Package",
               "version": "[8.0.5, )"
+            },
+            "Microsoft.Identity.Web": {
+              "target": "Package",
+              "version": "[2.16.0, )"
+            },
+            "Microsoft.Identity.Web.UI": {
+              "target": "Package",
+              "version": "[2.16.0, )"
             },
             "MimeKit": {
               "target": "Package",

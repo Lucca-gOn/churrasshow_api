@@ -88,5 +88,17 @@
         <member name="M:apiweb.churras.show.Migrations.BDv7.BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)">
             <inheritdoc />
         </member>
+        <member name="T:apiweb.churras.show.Migrations.BDv8">
+            <inheritdoc />
+        </member>
+        <member name="M:apiweb.churras.show.Migrations.BDv8.Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:apiweb.churras.show.Migrations.BDv8.Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:apiweb.churras.show.Migrations.BDv8.BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)">
+            <inheritdoc />
+        </member>
     </members>
 </doc>

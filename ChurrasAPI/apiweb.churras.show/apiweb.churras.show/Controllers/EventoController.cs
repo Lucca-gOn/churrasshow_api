@@ -1,5 +1,6 @@
 ﻿using apiweb.churras.show.Domains;
 using apiweb.churras.show.Interfaces;
+using apiweb.churras.show.Repositories;
 using apiweb.churras.show.Utils.Mail;
 using apiweb.churras.show.ViewModels;
 using Microsoft.AspNetCore.Http;
@@ -30,7 +31,7 @@ namespace apiweb.churras.show.Controllers
         }
 
         [HttpPost]
-        public async Task<IActionResult> CadastarEvento([FromForm] CriarEventoViewModel eventoViewModel)
+        public async Task<IActionResult> CadastarEvento(CriarEventoViewModel eventoViewModel)
         {
             if (!ModelState.IsValid)
             {
@@ -41,11 +42,7 @@ namespace apiweb.churras.show.Controllers
             {
                 Logradouro = eventoViewModel.Logradouro,
                 Cidade = eventoViewModel.Cidade,
-                UF = eventoViewModel.UF,
-                CEP = eventoViewModel.Cep,
                 Numero = eventoViewModel.Numero,
-                Bairro = eventoViewModel.Bairro,
-                Complemento = eventoViewModel.Complemento
             };
 
             _enderecoRepository.Cadastrar(endereco);
@@ -108,10 +105,8 @@ namespace apiweb.churras.show.Controllers
         {
             try
             {
-                // Obtém o ID do usuário logado dos claims do JWT
                 Guid id = Guid.Parse(HttpContext.User.Claims.First(c => c.Type == JwtRegisteredClaimNames.Jti).Value);
 
-                // Chama o serviço para listar eventos com base no ID do usuário logado
                 var eventos = _eventoService.ListarEventosValorTotal(id);
 
                 if (eventos == null || !eventos.Any())
@@ -161,6 +156,27 @@ namespace apiweb.churras.show.Controllers
             catch (Exception ex)
             {
                 return BadRequest($"Erro ao buscar eventos: {ex.Message}");
+            }
+        }
+
+        [HttpPut("AtualizarStatus")]
+        public IActionResult AtualizarStatusEvento(Guid id, [FromBody] AtualizarStatusEventoViewModel model)
+        {
+            try
+            {
+                if (ModelState.IsValid)
+                {
+                    _eventoRepository.AtualizarStatus(id, model);
+                    return StatusCode(200);
+                }
+                else
+                {
+                    return BadRequest(ModelState);
+                }
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(ex.Message);
             }
         }
 
