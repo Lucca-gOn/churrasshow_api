@@ -28,6 +28,27 @@ namespace apiweb.churras.show.Repositories
             }
         }
 
+        public async Task<List<Evento>> EventoStatusAsync(string status)
+        {
+            try
+            {
+                var eventos = await _context.Evento
+                    .Include(e => e.Pacotes)    
+                    .Include(e => e.Endereco)    
+                    .Include(e => e.Usuario)    
+                    .Include(e => e.StatusEvento) 
+                    .Where(e => e.StatusEvento.Status == status)
+                    .ToListAsync();
+
+                return eventos;
+            }
+            catch (Exception)
+            {
+                throw;
+            }
+        }
+
+
         public List<Evento> ListarTodos()
         {
             try

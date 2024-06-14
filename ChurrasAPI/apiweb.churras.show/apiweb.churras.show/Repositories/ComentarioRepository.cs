@@ -93,25 +93,32 @@ namespace apiweb.churras.show.Repositories
 
         public List<Comentarios> ListarSomenteExibe()
         {
-
             try
             {
                 return _context.Comentario
+                    .Include(c => c.Usuario)
+                    .Where(c => c.Exibe)
                     .Select(c => new Comentarios
                     {
+                        IdComentario = c.IdComentario,
                         DescricaoComentario = c.DescricaoComentario,
-                        Exibe = c.Exibe,
                         Pontuacao = c.Pontuacao,
+                        Exibe = c.Exibe,
                         IdEvento = c.IdEvento,
                         IdUsuario = c.IdUsuario,
-
-                    }).Where(c => c.Exibe == true).ToList();
+                        Usuario = new Usuario
+                        {
+                            Nome = c.Usuario!.Nome,
+                            Foto = c.Usuario.Foto,
+                        }
+                    })
+                    .ToList();
             }
             catch (Exception)
             {
-
                 throw;
             }
         }
+
     }
 }

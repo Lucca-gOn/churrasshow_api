@@ -2,6 +2,7 @@
 using apiweb.churras.show.Domains;
 using apiweb.churras.show.Dto;
 using apiweb.churras.show.Interfaces;
+using apiweb.churras.show.Repositories;
 
 namespace apiweb.churras.show.Service
 {
@@ -9,11 +10,39 @@ namespace apiweb.churras.show.Service
     public class UsuarioService : IUsuarioService
     {
         private readonly ChurrasShowContext _context;
+        private readonly IUsuarioRepository _usuarioRepository;
 
-        public UsuarioService(ChurrasShowContext context)
+        public UsuarioService(ChurrasShowContext context, IUsuarioRepository usuarioRepository)
         {
             _context = context;
+            _usuarioRepository = usuarioRepository;
         }
+
+        public ListarUsuariosResponseItem ListarUsuarioId(Guid id)
+        {
+            var usuario = _usuarioRepository.BuscarPorId(id);
+            if (usuario == null)
+                throw new Exception("Usuário não encontrado.");
+
+            return new ListarUsuariosResponseItem(
+                usuario.IdUsuario,
+                usuario.Endereco.IdEndereco,
+                usuario.Nome!,
+                usuario.Email!,
+                usuario.RG!,
+                usuario.CPF!,
+                usuario.Foto!,
+                usuario.TiposUsuario!.TituloTipoUsuario!,
+                usuario.Endereco.Logradouro!,
+                usuario.Endereco.Cidade!,
+                usuario.Endereco.UF!,
+                usuario.Endereco.CEP.ToString()!,
+                usuario.Endereco.Numero.ToString()!,
+                usuario.Endereco.Bairro!,
+                usuario.Endereco.Complemento!
+            );
+        }
+
         public ListarUsuariosResponse ListarUsuarios()
         {
             var listaUsuarios = (from u in _context.Usuario
@@ -38,5 +67,6 @@ namespace apiweb.churras.show.Service
 
             return new ListarUsuariosResponse(listaUsuarios);
         }
+
     }
 }

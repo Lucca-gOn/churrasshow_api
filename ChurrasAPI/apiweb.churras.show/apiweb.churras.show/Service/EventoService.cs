@@ -4,7 +4,10 @@ using apiweb.churras.show.Dto;
 using apiweb.churras.show.Interfaces;
 using apiweb.churras.show.Repositories;
 using apiweb.churras.show.Utils;
+using Microsoft.Azure.CognitiveServices.ContentModerator.Models;
 using Microsoft.EntityFrameworkCore;
+using static System.Runtime.InteropServices.JavaScript.JSType;
+using System.Runtime.ConstrainedExecution;
 
 namespace apiweb.churras.show.Service
 {
@@ -12,12 +15,99 @@ namespace apiweb.churras.show.Service
     {
         private readonly IPacoteRepository _pacoteRepository;
         private readonly ChurrasShowContext _context;
+        private readonly IEventoRepository _eventoRepository;
 
-        public EventoService(IPacoteRepository pacoteRepository, ChurrasShowContext context)
+        public EventoService(IPacoteRepository pacoteRepository, ChurrasShowContext context, IEventoRepository eventoRepository)
         {
             _pacoteRepository = pacoteRepository;
             _context = context;
+            _eventoRepository = eventoRepository;
         }
+
+        public List<ListarEventosResponseItem> BuscarPorData(DateTime dataEvento)
+        {
+            var eventos = _context.Evento
+                .Include(e => e.Pacotes)
+                .Include(e => e.Endereco)
+                .Include(e => e.Usuario)
+                .Include(e => e.StatusEvento)
+                .Where(x => x.DataHoraEvento.HasValue &&
+                            x.DataHoraEvento.Value.Year == dataEvento.Year &&
+                            x.DataHoraEvento.Value.Month == dataEvento.Month &&
+                            x.DataHoraEvento.Value.Day == dataEvento.Day)
+                .Select(x => new ListarEventosResponseItem(
+                    x.IdUsuario,
+                    x.Usuario.Nome,
+                    x.DataHoraEvento.Value,
+                    x.QuantidadePessoasEvento ?? 0,
+                    x.DuracaoEvento ?? 0,
+                    x.Descartaveis ?? false,
+                    x.Acompanhamentos ?? false,
+                    x.Garconete ?? 0,
+                    x.Confirmado ?? false,
+                    x.IdPacotes,
+                    x.Pacotes.NomePacote,
+                    x.Pacotes.DescricaoPacote,
+                    x.Pacotes.ValorPorPessoa ?? 0m,
+                    x.IdEndereco,
+                    x.Endereco.Logradouro,
+                    x.Endereco.Cidade,
+                    x.Endereco.UF,
+                    x.Endereco.CEP ?? 0,
+                    x.Endereco.Numero ?? 0,
+                    x.Endereco.Bairro,
+                    x.Endereco.Complemento,
+                    x.DataDeCriacao ?? DateTime.MinValue,
+                    x.StatusEvento.Status,
+                    x.ValorTotal ?? 0m
+                ))
+                .ToList();
+
+            return eventos;
+        }
+
+        public async Task<List<ListarEventosResponseItem>> BuscarPorStatusAsync(string status)
+        {
+            try
+            {
+                var eventos = await _eventoRepository.EventoStatusAsync(status);
+
+                var resultado = eventos.Select(x => new ListarEventosResponseItem(
+                    IdUsuario: x.IdUsuario,
+                    Nome: x.Usuario.Nome,
+                    DataHoraEvento: x.DataHoraEvento.Value,
+                    QuantidadePessoasEvento: x.QuantidadePessoasEvento ?? 0,
+                    DuracaoEvento: x.DuracaoEvento ?? 0,
+                    Descartaveis: x.Descartaveis ?? false,
+                    Acompanhamentos: x.Acompanhamentos ?? false,
+                    Garconete: x.Garconete ?? 0,
+                    Confirmado: x.Confirmado ?? false,
+                    IdPacote: x.IdPacotes,
+                    NomePacote: x.Pacotes.NomePacote,
+                    DescricaoPacote: x.Pacotes.DescricaoPacote,
+                    ValorPorPessoa: x.Pacotes.ValorPorPessoa ?? 0m,
+                    IdEndereco: x.IdEndereco,
+                    Logradouro: x.Endereco.Logradouro,
+                    Cidade: x.Endereco.Cidade,
+                    UF: x.Endereco.UF,
+                    CEP: x.Endereco.CEP ?? 0,
+                    Numero: x.Endereco.Numero ?? 0,
+                    Bairro: x.Endereco.Bairro,
+                    Complemento: x.Endereco.Complemento,
+                    DataDeCriacao: x.DataDeCriacao ?? DateTime.MinValue,
+                    Status: x.StatusEvento.Status,
+                    ValorTotal: x.ValorTotal ?? 0m
+                )).ToList();
+
+                return resultado;
+            }
+            catch (Exception ex)
+            {
+                throw new Exception("Ocorreu um erro ao buscar eventos pelo status.", ex);
+            }
+        }
+
+
 
         public async Task<decimal> CalcularValorTotal(Evento evento)
         {
@@ -57,39 +147,41 @@ namespace apiweb.churras.show.Service
 
         public List<ListarEventosResponseItem> ListarEventosValorTotal(Guid id)
         {
-            var listaEventos = (from e in _context.Evento
-                                join p in _context.Pacote on e.IdPacotes equals p.IdPacotes
-                                join end in _context.Endereco on e.IdEndereco equals end.IdEndereco
-                                join u in _context.Usuario on e.IdUsuario equals u.IdUsuario
-                                join s in _context.StatusEvento on e.IdStatusEvento equals s.IdStatusEvento
-                                select new
-                                {
-                                    e.IdUsuario,
-                                    u.Nome,
-                                    e.DataHoraEvento,
-                                    e.QuantidadePessoasEvento,
-                                    e.DuracaoEvento,
-                                    e.Descartaveis,
-                                    e.Acompanhamentos,
-                                    e.Garconete,
-                                    e.Confirmado,
-                                    p.IdPacotes,
-                                    p.NomePacote,
-                                    p.DescricaoPacote,
-                                    p.ValorPorPessoa,
-                                    e.IdEndereco,
-                                    end.Logradouro,
-                                    end.Cidade,
-                                    end.UF,
-                                    end.CEP,
-                                    end.Numero,
-                                    end.Bairro,
-                                    end.Complemento,
-                                    e.DataDeCriacao,
-                                    s.Status,
-                                    e.ValorTotal,
-                                    MostrarValorTotal = e.IdUsuario == id
-                                })
+            try
+            {
+                var listaEventos = (from e in _context.Evento
+                                    join p in _context.Pacote on e.IdPacotes equals p.IdPacotes
+                                    join end in _context.Endereco on e.IdEndereco equals end.IdEndereco
+                                    join u in _context.Usuario on e.IdUsuario equals u.IdUsuario
+                                    join s in _context.StatusEvento on e.IdStatusEvento equals s.IdStatusEvento
+                                    select new
+                                    {
+                                        e.IdUsuario,
+                                        u.Nome,
+                                        e.DataHoraEvento,
+                                        e.QuantidadePessoasEvento,
+                                        e.DuracaoEvento,
+                                        e.Descartaveis,
+                                        e.Acompanhamentos,
+                                        e.Garconete,
+                                        e.Confirmado,
+                                        p.IdPacotes,
+                                        p.NomePacote,
+                                        p.DescricaoPacote,
+                                        p.ValorPorPessoa,
+                                        e.IdEndereco,
+                                        end.Logradouro,
+                                        end.Cidade,
+                                        end.UF,
+                                        end.CEP,
+                                        end.Numero,
+                                        end.Bairro,
+                                        end.Complemento,
+                                        e.DataDeCriacao,
+                                        s.Status,
+                                        e.ValorTotal,
+                                        MostrarValorTotal = e.IdUsuario == id
+                                    })
                                 .AsEnumerable() // força a execução da consulta no banco de dados, lembrar result e AsEnumerable para metodos parecidos, muito dificil.
                                 .Select(result => new ListarEventosResponseItem(
                                     result.IdUsuario,
@@ -115,11 +207,17 @@ namespace apiweb.churras.show.Service
                                     result.Complemento,
                                     result.DataDeCriacao ?? DateTime.MinValue,
                                     result.Status,
-                                    result.MostrarValorTotal ? result.ValorTotal ?? 0m : 0m 
+                                    result.MostrarValorTotal ? result.ValorTotal ?? 0m : 0m
                                 ))
                                 .ToList();
 
-            return listaEventos;
+                return listaEventos;
+            }
+            catch (Exception ex)
+            {
+
+                throw new Exception("Ocorreu um erro ao listar os eventos com valor total do usuario", ex); ;
+            }
         }
 
     }

@@ -40,35 +40,36 @@ namespace apiweb.churras.show.Repositories
             }
         }
 
-        public void Atualizar(Guid id, Usuario usuario)
+        public void AtualizarUsuario(Guid id, AtualizarUsuarioViewModel model)
         {
             try
             {
-                Usuario buscarClinica = _context.Usuario.Find(id);
+                Usuario usuarioExistente = _context.Usuario.Include(u => u.Endereco).FirstOrDefault(u => u.IdUsuario == id)!;
 
-                if (buscarClinica != null)
+                if (usuarioExistente != null)
                 {
-                    buscarClinica.RG = usuario.RG;
-                    buscarClinica.CPF = usuario.CPF;
+                    usuarioExistente.Nome = model.name;
+                    usuarioExistente.RG = model.rg;
+                    usuarioExistente.CPF = model.cpf;
 
-                    if (usuario.Endereco != null && buscarClinica.Endereco != null)
+                    if (model.logradouro != null && usuarioExistente.Endereco != null)
                     {
-                        buscarClinica.Endereco.Logradouro = usuario.Endereco.Logradouro;
-                        buscarClinica.Endereco.Cidade = usuario.Endereco.Cidade;
-                        buscarClinica.Endereco.UF = usuario.Endereco.UF;
-                        buscarClinica.Endereco.CEP = usuario.Endereco.CEP;
-                        buscarClinica.Endereco.Numero = usuario.Endereco.Numero;
-                        buscarClinica.Endereco.Bairro = usuario.Endereco.Bairro;
-                        buscarClinica.Endereco.Complemento = usuario.Endereco.Complemento;
+                        usuarioExistente.Endereco.Logradouro = model.logradouro;
+                        usuarioExistente.Endereco.Cidade = model.cidade;
+                        usuarioExistente.Endereco.UF = model.uf;
+                        usuarioExistente.Endereco.CEP = model.cep ?? usuarioExistente.Endereco.CEP; 
+                        usuarioExistente.Endereco.Numero = model.number ?? usuarioExistente.Endereco.Numero;
+                        usuarioExistente.Endereco.Bairro = model.bairro;
+                        usuarioExistente.Endereco.Complemento = model.complemento;
                     }
 
-                    _context.Update(buscarClinica);
+                    _context.Update(usuarioExistente);
                     _context.SaveChanges();
                 }
             }
-            catch (Exception)
+            catch (Exception ex)
             {
-                throw;
+                throw new Exception("Erro ao atualizar usuario", ex);
             }
         }
 
@@ -126,7 +127,10 @@ namespace apiweb.churras.show.Repositories
 
         public Usuario BuscarPorId(Guid id)
         {
-            return _context.Usuario.FirstOrDefault(x => x.IdUsuario == id)!;
+            return _context.Usuario
+                       .Include(u => u.Endereco)
+                       .Include(u => u.TiposUsuario)
+                       .FirstOrDefault(u => u.IdUsuario == id)!;
         }
 
         public void Cadastrar(Usuario novoUsuario)
@@ -137,9 +141,28 @@ namespace apiweb.churras.show.Repositories
                 _context.Add(novoUsuario);
                 _context.SaveChanges();
             }
-            catch (Exception)
+            catch (DbUpdateException ex)
             {
-                throw;
+                if (ex.InnerException?.Message.Contains("IX_Usuario_Email") ?? false)
+                {
+                    throw new InvalidOperationException("O e-mail fornecido já está em uso.");
+                }
+                else if (ex.InnerException?.Message.Contains("IX_Usuario_CPF") ?? false)
+                {
+                    throw new InvalidOperationException("O CPF fornecido já está em uso.");
+                }
+                else if (ex.InnerException?.Message.Contains("IX_Usuario_RG") ?? false)
+                {
+                    throw new InvalidOperationException("O RG fornecido já está em uso.");
+                }
+                else
+                {
+                    throw;
+                }
+            }
+            catch (Exception ex)
+            {
+                throw new InvalidOperationException("Erro ao processar cadastro do usuário.", ex);
             }
         }
 

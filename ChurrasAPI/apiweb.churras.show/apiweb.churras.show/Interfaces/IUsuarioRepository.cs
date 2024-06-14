@@ -13,7 +13,7 @@ namespace apiweb.churras.show.Interfaces
 
         void Deletar(Guid idUsuario);
 
-        void Atualizar(Guid id, Usuario usuario);
+        public void AtualizarUsuario(Guid id, AtualizarUsuarioViewModel model);
 
         bool AlterarSenha(string email, string senhaNova);
 

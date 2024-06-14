@@ -4,6 +4,7 @@ using apiweb.churras.show.Utils.Mail;
 using apiweb.churras.show.ViewModels;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using System.Globalization;
 using System.IdentityModel.Tokens.Jwt;
 using System.Security.Claims;
 
@@ -125,5 +126,44 @@ namespace apiweb.churras.show.Controllers
                 return BadRequest(ex.Message);
             }
         }
+
+        [HttpGet("BuscarPorData")]
+        public IActionResult ListarPorData([FromQuery] string data)
+        {
+            try
+            {
+                if (DateTime.TryParseExact(data, "dd/MM/yyyy", CultureInfo.InvariantCulture, DateTimeStyles.None, out DateTime parsedDate))
+                {
+                    var events = _eventoService.BuscarPorData(parsedDate);
+                    return Ok(events);
+                }
+                return BadRequest("Data inválida.");
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(ex.Message);
+            }
+        }
+
+        [HttpGet("BuscarPorStatus")]
+        public async Task<IActionResult> ListarPorStatus(string status)
+        {
+            try
+            {
+                var eventos = await _eventoService.BuscarPorStatusAsync(status);
+                if (eventos == null || !eventos.Any())
+                {
+                    return NotFound("Nenhum evento encontrado com o status fornecido.");
+                }
+
+                return Ok(eventos);
+            }
+            catch (Exception ex)
+            {
+                return BadRequest($"Erro ao buscar eventos: {ex.Message}");
+            }
+        }
+
+
     }
 }

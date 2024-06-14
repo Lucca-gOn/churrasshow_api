@@ -5,5 +5,7 @@ namespace apiweb.churras.show.Interfaces
     public interface IUsuarioService
     {
         ListarUsuariosResponse ListarUsuarios();
+
+        ListarUsuariosResponseItem ListarUsuarioId(Guid id);
     }
 }

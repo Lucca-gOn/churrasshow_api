@@ -39,7 +39,9 @@ namespace apiweb.churras.show.Controllers
                 novoUsuario.CPF = clienteModel.Cpf;
                 novoUsuario.IdTipoUsuario = clienteModel.IdTipoUsuario;
 
-                
+                var connectionString = "";
+
+                var containerName = "";
 
                 novoUsuario.Foto = await AzureBlobStorageHelper.UploadImageBlobAsync(clienteModel.Arquivo!, connectionString, containerName);
 
@@ -100,12 +102,19 @@ namespace apiweb.churras.show.Controllers
         }
 
         [HttpPut("AtualizarUsuario")]
-        public IActionResult AtualizarUsuario(Guid id, [FromBody] Usuario usuario)
+        public IActionResult AtualizarUsuario(Guid id, [FromBody] AtualizarUsuarioViewModel model)
         {
             try
             {
-                _usuarioRepository.Atualizar(id, usuario);
-                return StatusCode(200);
+                if (ModelState.IsValid) 
+                {
+                    _usuarioRepository.AtualizarUsuario(id, model); 
+                    return StatusCode(200); 
+                }
+                else
+                {
+                    return BadRequest(ModelState); 
+                }
             }
             catch (Exception ex)
             {
@@ -128,7 +137,9 @@ namespace apiweb.churras.show.Controllers
                 }
 
 
-                
+                var connectionString = "";
+
+                var containerName = "";
 
                 string fotoUrl = await AzureBlobStorageHelper.UploadImageBlobAsync(form.Arquivo!, connectionString!, containerName!);
 
@@ -142,6 +153,20 @@ namespace apiweb.churras.show.Controllers
             catch (Exception ex)
             {
                 return BadRequest(ex.Message);
+            }
+        }
+
+        [HttpGet("{id}")]
+        public IActionResult ListarUsuarioPorId(Guid id)
+        {
+            try
+            {
+                var usuario = _usuarioService.ListarUsuarioId(id);
+                return Ok(usuario);
+            }
+            catch (Exception ex)
+            {
+                return NotFound(ex.Message);
             }
         }
     }

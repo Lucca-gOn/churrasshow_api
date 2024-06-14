@@ -7,5 +7,7 @@ namespace apiweb.churras.show.Interfaces
         void Cadastrar(Evento novoEvento);
 
         List<Evento> ListarTodos();
+
+        Task<List<Evento>> EventoStatusAsync(string status);
     }
 }

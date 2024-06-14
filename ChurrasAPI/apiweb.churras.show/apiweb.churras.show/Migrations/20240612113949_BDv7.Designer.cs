@@ -3,6 +3,7 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using apiweb.churras.show.Context;
 
@@ -11,9 +12,11 @@ using apiweb.churras.show.Context;
 namespace apiweb.churras.show.Migrations
 {
     [DbContext(typeof(ChurrasShowContext))]
-    partial class ChurrasShowContextModelSnapshot : ModelSnapshot
+    [Migration("20240612113949_BDv7")]
+    partial class BDv7
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder

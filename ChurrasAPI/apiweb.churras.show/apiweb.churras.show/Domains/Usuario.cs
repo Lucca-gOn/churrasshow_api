@@ -5,9 +5,9 @@ using System.ComponentModel.DataAnnotations.Schema;
 namespace apiweb.churras.show.Domains
 {
     [Table(nameof(Usuario))]
-    [Index(nameof(RG), IsUnique = true)]
-    [Index(nameof(CPF), IsUnique = true)]
-    [Index(nameof(Email), IsUnique = true)]
+    [Index(nameof(RG), IsUnique = true, Name = "IX_Usuario_RG")]
+    [Index(nameof(CPF), IsUnique = true, Name = "IX_Usuario_CPF")]
+    [Index(nameof(Email), IsUnique = true, Name = "IX_Usuario_Email")]
     public class Usuario
     {
         [Key]

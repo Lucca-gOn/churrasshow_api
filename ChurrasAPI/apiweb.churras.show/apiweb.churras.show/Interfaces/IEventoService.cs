@@ -7,6 +7,8 @@ namespace apiweb.churras.show.Interfaces
     {
         Task<decimal> CalcularValorTotal(Evento evento);
         List<ListarEventosResponseItem> ListarEventosValorTotal(Guid id);
+        List<ListarEventosResponseItem> BuscarPorData(DateTime dataEvento);
+        Task<List<ListarEventosResponseItem>> BuscarPorStatusAsync(string status);
 
     }
 }
