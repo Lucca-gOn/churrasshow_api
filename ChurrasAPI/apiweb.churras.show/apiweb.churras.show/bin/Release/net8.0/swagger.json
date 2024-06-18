@@ -1,0 +1,1123 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "title": "API ChurrasShow",
+    "description": "API Para Gerenciamento de Eventos e Or�amento - ChurrasShow WEB.API",
+    "contact": {
+      "name": "Alunos - Senai Inform�tica",
+      "url": "https://github.com/BrizidoAndre/ChurrasShow"
+    },
+    "version": "v1"
+  },
+  "paths": {
+    "/api/Comentario/ComentarioIA": {
+      "post": {
+        "tags": [
+          "Comentario"
+        ],
+        "consumes": [
+          "application/json",
+          "text/json",
+          "application/*+json"
+        ],
+        "parameters": [
+          {
+            "in": "body",
+            "name": "body",
+            "schema": {
+              "$ref": "#/definitions/Comentarios"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/Comentario": {
+      "post": {
+        "tags": [
+          "Comentario"
+        ],
+        "consumes": [
+          "application/json",
+          "text/json",
+          "application/*+json"
+        ],
+        "parameters": [
+          {
+            "in": "body",
+            "name": "body",
+            "schema": {
+              "$ref": "#/definitions/Comentarios"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      },
+      "get": {
+        "tags": [
+          "Comentario"
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "Comentario"
+        ],
+        "consumes": [
+          "application/json",
+          "text/json",
+          "application/*+json"
+        ],
+        "parameters": [
+          {
+            "in": "query",
+            "name": "id",
+            "type": "string",
+            "format": "uuid"
+          },
+          {
+            "in": "body",
+            "name": "body",
+            "schema": {
+              "$ref": "#/definitions/Comentarios"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/Comentario/ListarComentariosValidos": {
+      "get": {
+        "tags": [
+          "Comentario"
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/Comentario/{id}": {
+      "get": {
+        "tags": [
+          "Comentario"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "id",
+            "required": true,
+            "type": "string",
+            "format": "uuid"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "Comentario"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "id",
+            "required": true,
+            "type": "string",
+            "format": "uuid"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/Endereco": {
+      "get": {
+        "tags": [
+          "Endereco"
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "Endereco"
+        ],
+        "consumes": [
+          "application/json",
+          "text/json",
+          "application/*+json"
+        ],
+        "parameters": [
+          {
+            "in": "body",
+            "name": "body",
+            "schema": {
+              "$ref": "#/definitions/Endereco"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "Endereco"
+        ],
+        "consumes": [
+          "application/json",
+          "text/json",
+          "application/*+json"
+        ],
+        "parameters": [
+          {
+            "in": "query",
+            "name": "id",
+            "type": "string",
+            "format": "uuid"
+          },
+          {
+            "in": "body",
+            "name": "body",
+            "schema": {
+              "$ref": "#/definitions/Endereco"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/Endereco/{id}": {
+      "delete": {
+        "tags": [
+          "Endereco"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "id",
+            "required": true,
+            "type": "string",
+            "format": "uuid"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/Evento": {
+      "post": {
+        "tags": [
+          "Evento"
+        ],
+        "consumes": [
+          "application/json",
+          "text/json",
+          "application/*+json"
+        ],
+        "parameters": [
+          {
+            "in": "body",
+            "name": "body",
+            "schema": {
+              "$ref": "#/definitions/CriarEventoViewModel"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      },
+      "get": {
+        "tags": [
+          "Evento"
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/Evento/ListarEventosValorTotal": {
+      "get": {
+        "tags": [
+          "Evento"
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/Evento/BuscarPorData": {
+      "get": {
+        "tags": [
+          "Evento"
+        ],
+        "parameters": [
+          {
+            "in": "query",
+            "name": "data",
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/Evento/BuscarPorStatus": {
+      "get": {
+        "tags": [
+          "Evento"
+        ],
+        "parameters": [
+          {
+            "in": "query",
+            "name": "status",
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/Evento/AtualizarStatus": {
+      "put": {
+        "tags": [
+          "Evento"
+        ],
+        "consumes": [
+          "application/json",
+          "text/json",
+          "application/*+json"
+        ],
+        "parameters": [
+          {
+            "in": "query",
+            "name": "id",
+            "type": "string",
+            "format": "uuid"
+          },
+          {
+            "in": "body",
+            "name": "body",
+            "schema": {
+              "$ref": "#/definitions/AtualizarStatusEventoViewModel"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/Login": {
+      "post": {
+        "tags": [
+          "Login"
+        ],
+        "consumes": [
+          "application/json",
+          "text/json",
+          "application/*+json"
+        ],
+        "parameters": [
+          {
+            "in": "body",
+            "name": "body",
+            "schema": {
+              "$ref": "#/definitions/LoginViewModel"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/Pacotes": {
+      "get": {
+        "tags": [
+          "Pacotes"
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "Pacotes"
+        ],
+        "consumes": [
+          "application/json",
+          "text/json",
+          "application/*+json"
+        ],
+        "parameters": [
+          {
+            "in": "body",
+            "name": "body",
+            "schema": {
+              "$ref": "#/definitions/Pacotes"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/Pacotes/{id}": {
+      "get": {
+        "tags": [
+          "Pacotes"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "id",
+            "required": true,
+            "type": "string",
+            "format": "uuid"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/RecuperarSenha": {
+      "post": {
+        "tags": [
+          "RecuperarSenha"
+        ],
+        "parameters": [
+          {
+            "in": "query",
+            "name": "email",
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/RecuperarSenha/ValidarCodigoRecuperacaoSenha": {
+      "post": {
+        "tags": [
+          "RecuperarSenha"
+        ],
+        "parameters": [
+          {
+            "in": "query",
+            "name": "email",
+            "type": "string"
+          },
+          {
+            "in": "query",
+            "name": "codigo",
+            "type": "integer",
+            "format": "int32"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/StatusEvento": {
+      "get": {
+        "tags": [
+          "StatusEvento"
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/TiposUsuarios": {
+      "get": {
+        "tags": [
+          "TiposUsuarios"
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/Usuario": {
+      "post": {
+        "tags": [
+          "Usuario"
+        ],
+        "consumes": [
+          "multipart/form-data"
+        ],
+        "parameters": [
+          {
+            "in": "formData",
+            "name": "Nome",
+            "type": "string"
+          },
+          {
+            "in": "formData",
+            "name": "Email",
+            "type": "string"
+          },
+          {
+            "in": "formData",
+            "name": "Senha",
+            "type": "string"
+          },
+          {
+            "in": "formData",
+            "name": "Rg",
+            "type": "string"
+          },
+          {
+            "in": "formData",
+            "name": "Cpf",
+            "type": "string"
+          },
+          {
+            "in": "formData",
+            "name": "Logradouro",
+            "type": "string"
+          },
+          {
+            "in": "formData",
+            "name": "Cidade",
+            "type": "string"
+          },
+          {
+            "in": "formData",
+            "name": "Uf",
+            "type": "string"
+          },
+          {
+            "in": "formData",
+            "name": "Cep",
+            "type": "integer",
+            "format": "int32"
+          },
+          {
+            "in": "formData",
+            "name": "Numero",
+            "type": "integer",
+            "format": "int32"
+          },
+          {
+            "in": "formData",
+            "name": "Bairro",
+            "type": "string"
+          },
+          {
+            "in": "formData",
+            "name": "Complemento",
+            "type": "string"
+          },
+          {
+            "in": "formData",
+            "name": "IdTipoUsuario",
+            "type": "string",
+            "format": "uuid"
+          },
+          {
+            "in": "formData",
+            "name": "Foto",
+            "type": "string"
+          },
+          {
+            "in": "formData",
+            "name": "Arquivo",
+            "type": "file"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      },
+      "get": {
+        "tags": [
+          "Usuario"
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/Usuario/AlterarSenha": {
+      "put": {
+        "tags": [
+          "Usuario"
+        ],
+        "consumes": [
+          "application/json",
+          "text/json",
+          "application/*+json"
+        ],
+        "parameters": [
+          {
+            "in": "query",
+            "name": "email",
+            "type": "string"
+          },
+          {
+            "in": "body",
+            "name": "body",
+            "schema": {
+              "$ref": "#/definitions/AlterarSenhaViewModel"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/Usuario/AtualizarUsuario": {
+      "put": {
+        "tags": [
+          "Usuario"
+        ],
+        "consumes": [
+          "application/json",
+          "text/json",
+          "application/*+json"
+        ],
+        "parameters": [
+          {
+            "in": "query",
+            "name": "id",
+            "type": "string",
+            "format": "uuid"
+          },
+          {
+            "in": "body",
+            "name": "body",
+            "schema": {
+              "$ref": "#/definitions/AtualizarUsuarioViewModel"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/Usuario/AlterarFotoPerfil": {
+      "put": {
+        "tags": [
+          "Usuario"
+        ],
+        "consumes": [
+          "multipart/form-data"
+        ],
+        "parameters": [
+          {
+            "in": "query",
+            "name": "id",
+            "type": "string",
+            "format": "uuid"
+          },
+          {
+            "in": "formData",
+            "name": "Arquivo",
+            "type": "file"
+          },
+          {
+            "in": "formData",
+            "name": "Foto",
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/Usuario/{id}": {
+      "get": {
+        "tags": [
+          "Usuario"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "id",
+            "required": true,
+            "type": "string",
+            "format": "uuid"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    }
+  },
+  "definitions": {
+    "AlterarSenhaViewModel": {
+      "required": [
+        "senhaNova"
+      ],
+      "type": "object",
+      "properties": {
+        "senhaNova": {
+          "minLength": 1,
+          "type": "string"
+        }
+      }
+    },
+    "AtualizarStatusEventoViewModel": {
+      "type": "object",
+      "properties": {
+        "idStatusEvento": {
+          "format": "uuid",
+          "type": "string"
+        }
+      }
+    },
+    "AtualizarUsuarioViewModel": {
+      "type": "object",
+      "properties": {
+        "name": {
+          "type": "string"
+        },
+        "rg": {
+          "type": "string"
+        },
+        "cpf": {
+          "type": "string"
+        },
+        "logradouro": {
+          "type": "string"
+        },
+        "cidade": {
+          "type": "string"
+        },
+        "uf": {
+          "type": "string"
+        },
+        "cep": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "number": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "bairro": {
+          "type": "string"
+        },
+        "complemento": {
+          "type": "string"
+        }
+      }
+    },
+    "Comentarios": {
+      "required": [
+        "exibe"
+      ],
+      "type": "object",
+      "properties": {
+        "idComentario": {
+          "format": "uuid",
+          "type": "string"
+        },
+        "descricaoComentario": {
+          "type": "string"
+        },
+        "pontuacao": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "exibe": {
+          "type": "boolean"
+        },
+        "idEvento": {
+          "format": "uuid",
+          "type": "string"
+        },
+        "evento": {
+          "$ref": "#/definitions/Evento"
+        },
+        "idUsuario": {
+          "format": "uuid",
+          "type": "string"
+        },
+        "usuario": {
+          "$ref": "#/definitions/Usuario"
+        }
+      }
+    },
+    "CriarEventoViewModel": {
+      "required": [
+        "cidade",
+        "dataHoraEvento",
+        "duracaoEvento",
+        "logradouro",
+        "numero",
+        "quantidadePessoasEvento"
+      ],
+      "type": "object",
+      "properties": {
+        "dataHoraEvento": {
+          "format": "date-time",
+          "type": "string"
+        },
+        "quantidadePessoasEvento": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "duracaoEvento": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "descartaveis": {
+          "type": "boolean"
+        },
+        "acompanhamentos": {
+          "type": "boolean"
+        },
+        "garconete": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "confirmado": {
+          "type": "boolean"
+        },
+        "idPacotes": {
+          "format": "uuid",
+          "type": "string"
+        },
+        "idUsuario": {
+          "format": "uuid",
+          "type": "string"
+        },
+        "idStatusEvento": {
+          "format": "uuid",
+          "type": "string"
+        },
+        "logradouro": {
+          "minLength": 1,
+          "type": "string"
+        },
+        "cidade": {
+          "minLength": 1,
+          "type": "string"
+        },
+        "numero": {
+          "format": "int32",
+          "type": "integer"
+        }
+      }
+    },
+    "Endereco": {
+      "type": "object",
+      "properties": {
+        "idEndereco": {
+          "format": "uuid",
+          "type": "string"
+        },
+        "logradouro": {
+          "type": "string"
+        },
+        "cidade": {
+          "type": "string"
+        },
+        "uf": {
+          "type": "string"
+        },
+        "cep": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "numero": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "bairro": {
+          "type": "string"
+        },
+        "complemento": {
+          "type": "string"
+        }
+      }
+    },
+    "Evento": {
+      "required": [
+        "dataHoraEvento",
+        "duracaoEvento",
+        "quantidadePessoasEvento"
+      ],
+      "type": "object",
+      "properties": {
+        "idEvento": {
+          "format": "uuid",
+          "type": "string"
+        },
+        "dataHoraEvento": {
+          "format": "date-time",
+          "type": "string"
+        },
+        "quantidadePessoasEvento": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "duracaoEvento": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "descartaveis": {
+          "type": "boolean"
+        },
+        "acompanhamentos": {
+          "type": "boolean"
+        },
+        "garconete": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "confirmado": {
+          "type": "boolean"
+        },
+        "dataDeCriacao": {
+          "format": "date-time",
+          "type": "string"
+        },
+        "valorTotal": {
+          "format": "double",
+          "type": "number"
+        },
+        "idPacotes": {
+          "format": "uuid",
+          "type": "string"
+        },
+        "pacotes": {
+          "$ref": "#/definitions/Pacotes"
+        },
+        "idEndereco": {
+          "format": "uuid",
+          "type": "string"
+        },
+        "endereco": {
+          "$ref": "#/definitions/Endereco"
+        },
+        "idUsuario": {
+          "format": "uuid",
+          "type": "string"
+        },
+        "usuario": {
+          "$ref": "#/definitions/Usuario"
+        },
+        "idStatusEvento": {
+          "format": "uuid",
+          "type": "string"
+        },
+        "statusEvento": {
+          "$ref": "#/definitions/StatusEvento"
+        }
+      }
+    },
+    "LoginViewModel": {
+      "required": [
+        "email",
+        "senha"
+      ],
+      "type": "object",
+      "properties": {
+        "email": {
+          "minLength": 1,
+          "type": "string"
+        },
+        "senha": {
+          "minLength": 1,
+          "type": "string"
+        }
+      }
+    },
+    "Pacotes": {
+      "type": "object",
+      "properties": {
+        "idPacotes": {
+          "format": "uuid",
+          "type": "string"
+        },
+        "nomePacote": {
+          "type": "string"
+        },
+        "descricaoPacote": {
+          "type": "string"
+        },
+        "valorPorPessoa": {
+          "format": "double",
+          "type": "number"
+        }
+      }
+    },
+    "StatusEvento": {
+      "type": "object",
+      "properties": {
+        "idStatusEvento": {
+          "format": "uuid",
+          "type": "string"
+        },
+        "status": {
+          "type": "string"
+        }
+      }
+    },
+    "TiposUsuario": {
+      "type": "object",
+      "properties": {
+        "idTipoUsuario": {
+          "format": "uuid",
+          "type": "string"
+        },
+        "tituloTipoUsuario": {
+          "type": "string"
+        }
+      }
+    },
+    "Usuario": {
+      "required": [
+        "idTipoUsuario"
+      ],
+      "type": "object",
+      "properties": {
+        "idUsuario": {
+          "format": "uuid",
+          "type": "string"
+        },
+        "nome": {
+          "type": "string"
+        },
+        "rg": {
+          "type": "string"
+        },
+        "cpf": {
+          "pattern": "^\\d{11}$",
+          "type": "string"
+        },
+        "email": {
+          "type": "string"
+        },
+        "senha": {
+          "type": "string"
+        },
+        "foto": {
+          "type": "string"
+        },
+        "codRecupSenha": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "idTipoUsuario": {
+          "format": "uuid",
+          "type": "string"
+        },
+        "tiposUsuario": {
+          "$ref": "#/definitions/TiposUsuario"
+        },
+        "idEndereco": {
+          "format": "uuid",
+          "type": "string"
+        },
+        "endereco": {
+          "$ref": "#/definitions/Endereco"
+        }
+      }
+    }
+  },
+  "securityDefinitions": {
+    "Bearer": {
+      "type": "apiKey",
+      "name": "Authorization",
+      "in": "header",
+      "description": "Insira o token JWT desta maneira: Bearer {seu token}"
+    }
+  },
+  "security": [
+    {
+      "Bearer": [ ]
+    }
+  ]
+}

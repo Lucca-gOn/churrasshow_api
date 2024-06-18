@@ -26,6 +26,13 @@ namespace apiweb.churras.show.Service
 
         public List<ListarEventosResponseItem> BuscarPorData(DateTime dataEvento)
         {
+            var PrioridadeStatus = new Dictionary<Guid, int>
+            {
+                { new Guid("787fd592-c85c-4049-ba5d-7a28f15795e1"), 1 },
+                { new Guid("85ff68f5-ac18-4a5a-a500-374ce5bfb813"), 2 },
+                { new Guid("3786ca9b-8a94-4f1a-8a3e-0154dcf9a798"), 3 }
+            };
+                                                                                                                                                                            
             var eventos = _context.Evento
                 .Include(e => e.Pacotes)
                 .Include(e => e.Endereco)
@@ -35,36 +42,41 @@ namespace apiweb.churras.show.Service
                             x.DataHoraEvento.Value.Year == dataEvento.Year &&
                             x.DataHoraEvento.Value.Month == dataEvento.Month &&
                             x.DataHoraEvento.Value.Day == dataEvento.Day)
-                .Select(x => new ListarEventosResponseItem(
-                    x.IdUsuario,
-                    x.Usuario.Nome,
-                    x.DataHoraEvento.Value,
-                    x.QuantidadePessoasEvento ?? 0,
-                    x.DuracaoEvento ?? 0,
-                    x.Descartaveis ?? false,
-                    x.Acompanhamentos ?? false,
-                    x.Garconete ?? 0,
-                    x.Confirmado ?? false,
-                    x.IdPacotes,
-                    x.Pacotes.NomePacote,
-                    x.Pacotes.DescricaoPacote,
-                    x.Pacotes.ValorPorPessoa ?? 0m,
-                    x.IdEndereco,
-                    x.Endereco.Logradouro,
-                    x.Endereco.Cidade,
-                    x.Endereco.UF,
-                    x.Endereco.CEP ?? 0,
-                    x.Endereco.Numero ?? 0,
-                    x.Endereco.Bairro,
-                    x.Endereco.Complemento,
-                    x.DataDeCriacao ?? DateTime.MinValue,
-                    x.StatusEvento.Status,
-                    x.ValorTotal ?? 0m
-                ))
+                .ToList();  
+            eventos = eventos
+                .OrderBy(x => PrioridadeStatus[x.StatusEvento.IdStatusEvento])
                 .ToList();
-
-            return eventos;
+            return eventos.Select(x => new ListarEventosResponseItem(
+                x.IdEvento,
+                x.IdUsuario,
+                x.Usuario.Nome,
+                x.Usuario.Foto,
+                x.DataHoraEvento.Value,
+                x.QuantidadePessoasEvento ?? 0,
+                x.DuracaoEvento ?? 0,
+                x.Descartaveis ?? false,
+                x.Acompanhamentos ?? false,
+                x.Garconete ?? 0,
+                x.Confirmado ?? false,
+                x.IdPacotes,
+                x.Pacotes.NomePacote,
+                x.Pacotes.DescricaoPacote,
+                x.Pacotes.ValorPorPessoa ?? 0m,
+                x.IdEndereco,
+                x.Endereco.Logradouro,
+                x.Endereco.Cidade,
+                x.Endereco.UF,
+                x.Endereco.CEP ?? 0,
+                x.Endereco.Numero ?? 0,
+                x.Endereco.Bairro,
+                x.Endereco.Complemento,
+                x.DataDeCriacao ?? DateTime.MinValue,
+                x.StatusEvento.Status,
+                x.ValorTotal ?? 0m
+            )).ToList();
         }
+
+
 
         public async Task<List<ListarEventosResponseItem>> BuscarPorStatusAsync(string status)
         {
@@ -73,8 +85,10 @@ namespace apiweb.churras.show.Service
                 var eventos = await _eventoRepository.EventoStatusAsync(status);
 
                 var resultado = eventos.Select(x => new ListarEventosResponseItem(
+                    IdEvento: x.IdEvento,
                     IdUsuario: x.IdUsuario,
                     Nome: x.Usuario.Nome,
+                    Foto: x.Usuario.Foto,
                     DataHoraEvento: x.DataHoraEvento.Value,
                     QuantidadePessoasEvento: x.QuantidadePessoasEvento ?? 0,
                     DuracaoEvento: x.DuracaoEvento ?? 0,
@@ -156,8 +170,10 @@ namespace apiweb.churras.show.Service
                                     join s in _context.StatusEvento on e.IdStatusEvento equals s.IdStatusEvento
                                     select new
                                     {
-                                        e.IdUsuario,
+                                        e.IdEvento,
+                                        u.IdUsuario,
                                         u.Nome,
+                                        u.Foto,
                                         e.DataHoraEvento,
                                         e.QuantidadePessoasEvento,
                                         e.DuracaoEvento,
@@ -184,8 +200,10 @@ namespace apiweb.churras.show.Service
                                     })
                                 .AsEnumerable() // força a execução da consulta no banco de dados, lembrar result e AsEnumerable para metodos parecidos, muito dificil.
                                 .Select(result => new ListarEventosResponseItem(
+                                    result.IdEvento,
                                     result.IdUsuario,
                                     result.Nome,
+                                    result.Foto,
                                     result.DataHoraEvento ?? DateTime.MinValue,
                                     result.QuantidadePessoasEvento ?? 0,
                                     result.DuracaoEvento ?? 0,

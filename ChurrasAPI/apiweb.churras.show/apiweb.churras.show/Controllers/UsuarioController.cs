@@ -39,9 +39,7 @@ namespace apiweb.churras.show.Controllers
                 novoUsuario.CPF = clienteModel.Cpf;
                 novoUsuario.IdTipoUsuario = clienteModel.IdTipoUsuario;
 
-                var connectionString = "";
-
-                var containerName = "";
+                
 
                 novoUsuario.Foto = await AzureBlobStorageHelper.UploadImageBlobAsync(clienteModel.Arquivo!, connectionString, containerName);
 
@@ -137,9 +135,7 @@ namespace apiweb.churras.show.Controllers
                 }
 
 
-                var connectionString = "";
-
-                var containerName = "";
+                
 
                 string fotoUrl = await AzureBlobStorageHelper.UploadImageBlobAsync(form.Arquivo!, connectionString!, containerName!);
 

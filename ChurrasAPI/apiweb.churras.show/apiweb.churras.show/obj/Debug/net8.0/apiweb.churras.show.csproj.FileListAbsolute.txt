@@ -778,3 +778,17 @@ C:\Users\51021784826\Desktop\churrasshow_api\ChurrasAPI\apiweb.churras.show\apiw
 C:\Users\51021784826\Desktop\churrasshow_api\ChurrasAPI\apiweb.churras.show\apiweb.churras.show\bin\Debug\net8.0\Microsoft.Identity.Web.UI.dll
 C:\Users\51021784826\Desktop\churrasshow_api\ChurrasAPI\apiweb.churras.show\apiweb.churras.show\bin\Debug\net8.0\Microsoft.IdentityModel.LoggingExtensions.dll
 C:\Users\51021784826\Desktop\churrasshow_api\ChurrasAPI\apiweb.churras.show\apiweb.churras.show\bin\Debug\net8.0\Microsoft.IdentityModel.Validators.dll
+C:\Users\apbno\Desktop\churrasshow_api\ChurrasAPI\apiweb.churras.show\apiweb.churras.show\bin\Debug\net8.0\Azure.Security.KeyVault.Certificates.dll
+C:\Users\apbno\Desktop\churrasshow_api\ChurrasAPI\apiweb.churras.show\apiweb.churras.show\bin\Debug\net8.0\Azure.Security.KeyVault.Secrets.dll
+C:\Users\apbno\Desktop\churrasshow_api\ChurrasAPI\apiweb.churras.show\apiweb.churras.show\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.OpenIdConnect.dll
+C:\Users\apbno\Desktop\churrasshow_api\ChurrasAPI\apiweb.churras.show\apiweb.churras.show\bin\Debug\net8.0\Microsoft.Identity.Abstractions.dll
+C:\Users\apbno\Desktop\churrasshow_api\ChurrasAPI\apiweb.churras.show\apiweb.churras.show\bin\Debug\net8.0\Microsoft.Identity.Web.dll
+C:\Users\apbno\Desktop\churrasshow_api\ChurrasAPI\apiweb.churras.show\apiweb.churras.show\bin\Debug\net8.0\Microsoft.Identity.Web.Certificate.dll
+C:\Users\apbno\Desktop\churrasshow_api\ChurrasAPI\apiweb.churras.show\apiweb.churras.show\bin\Debug\net8.0\Microsoft.Identity.Web.Certificateless.dll
+C:\Users\apbno\Desktop\churrasshow_api\ChurrasAPI\apiweb.churras.show\apiweb.churras.show\bin\Debug\net8.0\Microsoft.Identity.Web.Diagnostics.dll
+C:\Users\apbno\Desktop\churrasshow_api\ChurrasAPI\apiweb.churras.show\apiweb.churras.show\bin\Debug\net8.0\Microsoft.Identity.Web.TokenAcquisition.dll
+C:\Users\apbno\Desktop\churrasshow_api\ChurrasAPI\apiweb.churras.show\apiweb.churras.show\bin\Debug\net8.0\Microsoft.Identity.Web.TokenCache.dll
+C:\Users\apbno\Desktop\churrasshow_api\ChurrasAPI\apiweb.churras.show\apiweb.churras.show\bin\Debug\net8.0\Microsoft.Identity.Web.UI.Views.dll
+C:\Users\apbno\Desktop\churrasshow_api\ChurrasAPI\apiweb.churras.show\apiweb.churras.show\bin\Debug\net8.0\Microsoft.Identity.Web.UI.dll
+C:\Users\apbno\Desktop\churrasshow_api\ChurrasAPI\apiweb.churras.show\apiweb.churras.show\bin\Debug\net8.0\Microsoft.IdentityModel.LoggingExtensions.dll
+C:\Users\apbno\Desktop\churrasshow_api\ChurrasAPI\apiweb.churras.show\apiweb.churras.show\bin\Debug\net8.0\Microsoft.IdentityModel.Validators.dll

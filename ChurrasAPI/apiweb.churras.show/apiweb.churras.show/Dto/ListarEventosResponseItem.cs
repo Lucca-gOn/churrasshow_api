@@ -3,8 +3,10 @@
 namespace apiweb.churras.show.Dto
 {
     public record ListarEventosResponseItem(
-    [property: JsonPropertyName("_id")] Guid IdUsuario,
+    [property: JsonPropertyName("_idEvento")] Guid IdEvento,
+    [property: JsonPropertyName("_idUsuario")] Guid IdUsuario,
     [property: JsonPropertyName("nomeCliente")] string Nome,
+    [property: JsonPropertyName("img")] string Foto,
     [property: JsonPropertyName("dataHoraEvento")] DateTime DataHoraEvento,
     [property: JsonPropertyName("quantidadePessoasEvento")] int QuantidadePessoasEvento,
     [property: JsonPropertyName("duracaoEvento")] int DuracaoEvento,

@@ -1,0 +1,104 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>apiweb.churras.show</name>
+    </assembly>
+    <members>
+        <member name="T:apiweb.churras.show.Migrations.BDv3">
+            <inheritdoc />
+        </member>
+        <member name="M:apiweb.churras.show.Migrations.BDv3.Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:apiweb.churras.show.Migrations.BDv3.Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:apiweb.churras.show.Migrations.BDv3.BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="T:apiweb.churras.show.Migrations.BDv1">
+            <inheritdoc />
+        </member>
+        <member name="M:apiweb.churras.show.Migrations.BDv1.Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:apiweb.churras.show.Migrations.BDv1.Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:apiweb.churras.show.Migrations.BDv1.BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="T:apiweb.churras.show.Migrations.BDv2">
+            <inheritdoc />
+        </member>
+        <member name="M:apiweb.churras.show.Migrations.BDv2.Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:apiweb.churras.show.Migrations.BDv2.Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:apiweb.churras.show.Migrations.BDv2.BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="T:apiweb.churras.show.Migrations.BDv4">
+            <inheritdoc />
+        </member>
+        <member name="M:apiweb.churras.show.Migrations.BDv4.Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:apiweb.churras.show.Migrations.BDv4.Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:apiweb.churras.show.Migrations.BDv4.BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="T:apiweb.churras.show.Migrations.BDv5">
+            <inheritdoc />
+        </member>
+        <member name="M:apiweb.churras.show.Migrations.BDv5.Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:apiweb.churras.show.Migrations.BDv5.Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:apiweb.churras.show.Migrations.BDv5.BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="T:apiweb.churras.show.Migrations.BDv6">
+            <inheritdoc />
+        </member>
+        <member name="M:apiweb.churras.show.Migrations.BDv6.Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:apiweb.churras.show.Migrations.BDv6.Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:apiweb.churras.show.Migrations.BDv6.BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="T:apiweb.churras.show.Migrations.BDv7">
+            <inheritdoc />
+        </member>
+        <member name="M:apiweb.churras.show.Migrations.BDv7.Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:apiweb.churras.show.Migrations.BDv7.Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:apiweb.churras.show.Migrations.BDv7.BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="T:apiweb.churras.show.Migrations.BDv8">
+            <inheritdoc />
+        </member>
+        <member name="M:apiweb.churras.show.Migrations.BDv8.Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:apiweb.churras.show.Migrations.BDv8.Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:apiweb.churras.show.Migrations.BDv8.BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)">
+            <inheritdoc />
+        </member>
+    </members>
+</doc>

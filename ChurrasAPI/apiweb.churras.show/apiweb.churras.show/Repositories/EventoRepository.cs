@@ -24,16 +24,35 @@ namespace apiweb.churras.show.Repositories
                 if (eventoExistente != null)
                 {
                     eventoExistente.IdStatusEvento = model.IdStatusEvento;
-
                     _context.Update(eventoExistente);
+
+                    Guid idAprovado = new Guid("787fd592-c85c-4049-ba5d-7a28f15795e1"); 
+                    Guid idCancelado = new Guid("3786ca9b-8a94-4f1a-8a3e-0154dcf9a798");  
+
+                    if (eventoExistente.IdStatusEvento == idAprovado)
+                    {
+                        var eventosMesmaData = _context.Evento
+                            .Where(e => e.DataHoraEvento == eventoExistente.DataHoraEvento && e.IdEvento != id)
+                            .ToList();
+
+                        foreach (var evento in eventosMesmaData)
+                        {
+                            evento.IdStatusEvento = idCancelado;
+                            _context.Update(evento);
+                        }
+                    }
+
                     _context.SaveChanges();
                 }
             }
             catch (Exception ex)
             {
-                throw new Exception("Erro ao atualizar status evento", ex);
+                throw new Exception("Erro ao atualizar status do evento", ex);
             }
         }
+
+
+
 
         public void Cadastrar(Evento novoEvento)
         {
